@@ -1,0 +1,57 @@
+.main-page__header {
+	width: 100%;
+	background-image: url('../../images/main/header.jpg');
+	background-size: cover;
+	color: white;
+}
+
+.main-page__title {
+	padding: 45px 35px;
+	width: 300px;
+}
+
+.main-page__header h1 {
+	font-size: 30pt;
+	margin-bottom: 15px;
+	font-weight: 300;	
+}
+
+.main-page__header p {
+	font-family: "Effra", sans-serif;
+	font-size: 16pt;
+	font-weight: 400;
+}
+
+.main-page__header__news {
+	display: inline-block;
+	width: 180px;
+	height: 180px;
+	margin-left: 35px;
+	margin-bottom: 35px;
+	padding: 27px 20px;
+	color: white;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06b7d6+0,90e6ec+100 */
+	background: rgb(6,183,214); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(6,183,214,1) 0%, rgba(144,230,236,1) 100%); /* FF3.6-15 */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(6,183,214,1)), color-stop(100%,rgba(144,230,236,1))); /* Chrome4-9,Safari4-5 */
+	background: -webkit-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: -o-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Opera 11.10-11.50 */
+	background: -ms-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* IE10 preview */
+	background: linear-gradient(to bottom,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06b7d6', endColorstr='#90e6ec',GradientType=0 ); /* IE6-9 */
+}
+
+.main-page__header__news p {
+	font-size: 14pt;
+	font-weight: 400;
+	line-height: 18pt;
+}
+
+.main-page__header__news a {
+	color: inherit;
+	border-color: rgba(255, 255, 255, 0.5);
+}
+
+.text-block {
+	margin: 30px 0;
+}

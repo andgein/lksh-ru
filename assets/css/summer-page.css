@@ -1,0 +1,100 @@
+.page-description {
+	color: #3CC794;
+	font-size: 23pt;
+}
+
+.about-day {
+	background-color: #AFEFC9;
+    margin: 0 -50px;
+    padding: 25px 50px;    
+}
+
+.timeline {
+	font-size: 14pt;
+	color: #003D37;
+}
+
+.timeline__section__header {
+	display: inline-block;
+	margin-left: 296px;
+}
+
+.timeline h4 {
+	font-family: "Pragmatica Slabserif";
+	font-size: 18pt;
+    padding: 20px 18px;
+    border: 3px solid #003D37;
+    display: inline-block;
+    margin-left: -50%;    
+}
+
+.timeline__group {
+	width: 300px;
+	border-right: 4px solid #00B084;
+}
+
+.timeline__group.right {
+	width: 600px;
+	margin-left: 296px;
+	border-left: 4px solid #00B084;
+	border-right: none;
+}
+
+.timeline__group.right .timeline__item > * {
+	padding-left: 100px;
+}
+
+.timeline__section__header + .timeline__group {
+	padding-top: 25px;
+}
+
+.timeline__group:last-child {
+	padding-bottom: 80px;
+}
+
+.timeline__item {
+	width: inherit;
+	padding-top: 40px;
+}
+
+.timeline__group .timeline__item:first-child {
+	padding-top: 20px;
+}
+
+.timeline__item__header {
+    border-bottom: 1px solid #00B084;
+    font-weight: 900;
+    padding: 3px 0px;
+}
+
+.timeline__item__header .time {
+	float: right;
+	margin-right: 50px;
+}
+
+.timeline__group.right .timeline__item__header .time {
+	float: left;
+	margin-left: -65px;
+	margin-right: 0;
+}
+
+.timeline__item p {
+	font-size: inherit;
+}
+
+.timeline__group .timeline__item:last-child .timeline__item__text {
+	position: absolute;
+	width: inherit;
+}
+
+.timeline__item__text {
+	padding-right: 40px;
+}
+
+.timeline__item__text p {
+	line-height: 18pt;
+}
+
+.timeline__group.right .timeline__item__text {
+	padding-right: 0;
+}

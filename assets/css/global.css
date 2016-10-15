@@ -83,29 +83,87 @@ img {
 }
 
 h1 {
-  font-family: "Pragmatica Slabserif", sans-serif;
-  font-size: 45pt;
-  font-weight: 300;
+  font-size: 69px;
+  line-height: 50px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 h2 {
-  font-size: 40pt;
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 800;
+  margin-bottom: 18px;
 }
 
 h3 {
-  font-family: "Pragmatica Slabserif", sans-serif;
-  font-size: 22pt;
-  margin: 10px 0;
+  font-size: 20pt;
+  line-height: 24px;
+  font-weight: 800;
+  margin: 10px 0 6px;
 }
 
 p {
-  font-size: 16pt;
-  line-height: 16pt;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+p + h2 {
+  margin-top: 55px; 
+}
+
+p + h3 {
+  margin-top: 8px; 
 }
 
 p + p {
-  margin-top: 15px;
+  margin-top: 12px;
 }
+
+.comment {
+  font-size: 15px;
+}
+
+.black {
+  background: #000;
+  padding: 6px 7px 6px 5px;
+  display: inline-block;
+  position: relative;
+}
+
+.black span {
+  color: #fff;
+}
+
+.black ~ .black {
+	top: -3px;
+	padding-top: 0px; 
+}
+
+.button {
+  background: #bc3a17;
+  color: #fff;
+  padding: 14px 24px;
+  display: inline-block;
+  font-size: 19px;
+  margin: 12px 0;
+  position: relative;
+  box-shadow: 5px 5px 0 rgba(196, 162, 157, 1);
+  border: 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #d14524;
+  border: 0;
+}
+
+.button:active {
+  top: 3px;
+  left: 3px;
+  box-shadow: 1px 1px 0 rgba(119, 94, 93, 1);
+}
+
 
 .content {
   padding: 40px;
@@ -159,9 +217,21 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;  
-  border-bottom: 1px solid rgba(58, 191, 136, 0.5);
+  border-bottom: 1px solid rgba(58, 191, 136, 0.2);
 }
 
 a {
   color: #3ABF88;
+}
+
+footer a {
+  color: #000;
+}
+
+footer a,
+footer a:hover,
+footer a:focus,
+footer a:active {
+  text-decoration: none;  
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }

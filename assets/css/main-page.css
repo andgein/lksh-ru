@@ -2,7 +2,6 @@
 	width: 100%;
 	background-image: url('../../images/main/header.jpg');
 	background-size: cover;
-	color: white;
 }
 
 .main-page__title {
@@ -11,9 +10,7 @@
 }
 
 .main-page__header h1 {
-	font-size: 30pt;
 	margin-bottom: 15px;
-	font-weight: 300;	
 }
 
 .main-page__header p {

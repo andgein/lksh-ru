@@ -64,6 +64,14 @@
 /* End of school announce */
 
 /* Sponsors */
+.sponsors {
+	margin: 50px 0 20px;
+}
+
+.sponsors a {
+	border-width: 0;
+}
+
 .sponsors img {
 	margin: 0 15px;
 }
@@ -77,8 +85,8 @@
 .image-slider .image {
 	background-image: url('../../images/main/sport.jpg');
 	background-size: cover;
-	height: 500px;
-	padding: 40px 0;
+	height: 700px;
+	padding: 40px 0 0;
 }
 
 .image-slider .image h2 {
@@ -95,40 +103,108 @@
 }
 
 .image-slider .image .container .description {
-	position: absolute;
 	right: 0;
-	bottom: 20px;
-	background-color: black;
-	width: 200px;
-	padding: 8px;
-	font-size: 15px;
-	line-height: 17px;
-}
-
-.image-slider .switcher {
-	position: relative;
-	top: -35px;
-}
-
-.image-slider .switcher .element {
-	display: inline-block;
-	height: 70px;
-	margin: 0;
-	cursor: pointer;
-}
-
-.image-slider .switcher .element.active {
-	cursor: default;
-	pointer-events: none;
-}
-
-.image-slider .switcher .element img {
-	height: 70px;
-	width: auto;
-	margin: 0;
-}
-
-.image-slider .switcher .element.active img {
-	border: 5px solid black;
 }
 /* End of image slider */
+
+/* Portraits */
+.portraits {
+	height: 700px;
+	position: relative;
+}
+
+.portrait {
+	display: inline-block;
+	position: absolute;
+}
+
+.portrait.level-1 { z-index: 5; }
+.portrait.level-2 { z-index: 4; }
+.portrait.level-3 { z-index: 3; }
+.portrait.level-4 { z-index: 2; }
+
+
+.portrait:nth-child(1) { left: 490px; top: 370px; }
+.portrait:nth-child(2) { left: 50px; top: 30px; }
+.portrait:nth-child(3) { left: 440px; top: 200px; }
+.portrait:nth-child(4) { left: 140px; top: 290px; } 
+.portrait:nth-child(5) { left: 470px; top: 50px; }
+.portrait:nth-child(6) { left: 280px; top: 310px; }
+.portrait:nth-child(7) { left: 600px; top: 120px; }
+.portrait:nth-child(8) { left: 110px; top: 490px; }
+
+.portrait:nth-child(9) { left: 750px; top: 90px; }
+.portrait:nth-child(10) { left: 850px; top: 70px; }
+.portrait:nth-child(11) { left: 30px; top: 200px; }
+.portrait:nth-child(12) { left: 700px; top: 20px; }
+.portrait:nth-child(13) { left: 330px; top: 210px; }
+.portrait:nth-child(14) { left: 390px; top: 365px; }
+.portrait:nth-child(15) { left: 20px; top: 400px; }
+.portrait:nth-child(16) { left: 620px; top: 250px; }
+.portrait:nth-child(17) { left: 820px; top: 210px; }
+.portrait:nth-child(18) { left: 210px; top: 430px; }
+.portrait:nth-child(19) { left: 400px; top: 520px; }
+.portrait:nth-child(20) { left: 390px; top: 30px; }
+
+
+
+.portrait.large img {
+	width: 270px;
+	min-width: 250px;
+	height: auto;
+}
+
+.portrait.medium img {
+	width: 170px;
+	min-width: 170px;
+	height: auto;
+}
+
+.portrait.small img {
+	width: 130px;
+	min-width: 130px;
+	height: auto;
+}
+
+.portrait.with-cite .cite {
+	position: absolute;
+	top: 20px;	
+}
+
+.portrait.with-cite-left .cite {
+	right: 150px;
+}
+
+.portrait.with-cite-right .cite {
+	left: 200px;
+}
+
+.portrait.with-cite-left img {
+	margin-left: 120px;
+}
+
+.portrait.with-cite-right img {
+	margin-right: 140px;
+}
+
+.portrait.with-cite .title {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    padding: 7px 5px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.portrait.with-cite .about {
+    font-size: 15px;
+    margin: 5px 0 10px;
+    font-weight: 500;
+}
+
+.portrait.with-cite .text {
+    font-size: 19px;
+    font-weight: 800;
+    line-height: 21px;
+}
+/* End of portraits */

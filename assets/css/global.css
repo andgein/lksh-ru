@@ -93,6 +93,7 @@ h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 800;
+  margin-top: 50px;
 }
 
 h3 {
@@ -279,7 +280,13 @@ footer a:active {
 }
 
 .header.with-background {
+  height: 500px;
   min-height: 500px;
+}
+
+.header > .container {
+  height: 400px;
+  position: relative;
 }
 
 .header__title {
@@ -380,6 +387,10 @@ footer a:active {
   padding-top: 15px;
 }
 
+.header__top .container {
+  position: relative;
+}
+
 .header__top .container > div {
   display: inline-block;
 }
@@ -432,5 +443,28 @@ footer a:active {
   border-width: 0;
 }
 
+.header__profile {
+  position: absolute;
+  right: 20px;
+}
+
+.header__profile a {
+  border-width: 0;
+}
 /* End of header top */
 
+/* Description-black */
+.description-black {
+  color: white;
+  position: absolute;
+  bottom: -25px;
+  padding: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.description-black .line span {
+  padding: 5px 7px;
+  background-color: black;
+}
+/* End of description-black */

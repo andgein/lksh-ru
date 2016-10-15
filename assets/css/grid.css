@@ -661,13 +661,12 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .container {
     width: 750px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media (min-width: 992px) {

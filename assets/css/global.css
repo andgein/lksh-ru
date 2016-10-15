@@ -93,11 +93,10 @@ h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 800;
-  margin-bottom: 18px;
 }
 
 h3 {
-  font-size: 20pt;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 800;
   margin: 10px 0 6px;
@@ -146,7 +145,6 @@ p + p {
   padding: 14px 24px;
   display: inline-block;
   font-size: 19px;
-  margin: 12px 0;
   position: relative;
   box-shadow: 5px 5px 0 rgba(196, 162, 157, 1);
   border: 0;
@@ -165,46 +163,86 @@ p + p {
 }
 
 
+/*
 .content {
   padding: 40px;
 }
+*/
 
-.mt10 { margin-top: 10px; }
-.mt20 { margin-top: 20px; }
-.mt30 { margin-top: 30px; }
-.mt40 { margin-top: 40px; }
-.mt50 { margin-top: 50px; }
-.mt60 { margin-top: 60px; }
-.mt70 { margin-top: 70px; }
-.mt80 { margin-top: 80px; }
-.mt90 { margin-top: 90px; }
+.mt10 { margin-top: 10px !important; }
+.mt20 { margin-top: 20px !important; }
+.mt30 { margin-top: 30px !important; }
+.mt40 { margin-top: 40px !important; }
+.mt50 { margin-top: 50px !important; }
+.mt60 { margin-top: 60px !important; }
+.mt70 { margin-top: 70px !important; }
+.mt80 { margin-top: 80px !important; }
+.mt90 { margin-top: 90px !important; }
 
-.pt10 { padding-top: 10px; }
-.pt20 { padding-top: 20px; }
-.pt30 { padding-top: 30px; }
-.pt40 { padding-top: 40px; }
-.pt50 { padding-top: 50px; }
-.pt60 { padding-top: 60px; }
-.pt70 { padding-top: 70px; }
-.pt80 { padding-top: 80px; }
-.pt90 { padding-top: 90px; }
+.ml10 { margin-left: 10px !important; }
+.ml20 { margin-left: 20px !important; }
+.ml30 { margin-left: 30px !important; }
+.ml40 { margin-left: 40px !important; }
+.ml50 { margin-left: 50px !important; }
+.ml60 { margin-left: 60px !important; }
+.ml70 { margin-left: 70px !important; }
+.ml80 { margin-left: 80px !important; }
+.ml90 { margin-left: 90px !important; }
+
+.pt10 { padding-top: 10px !important; }
+.pt20 { padding-top: 20px !important; }
+.pt30 { padding-top: 30px !important; }
+.pt40 { padding-top: 40px !important; }
+.pt50 { padding-top: 50px !important; }
+.pt60 { padding-top: 60px !important; }
+.pt70 { padding-top: 70px !important; }
+.pt80 { padding-top: 80px !important; }
+.pt90 { padding-top: 90px !important; }
+
+@media (min-width: 992px) {
+  .md-mln  { margin-left: 0 !important; }
+  .md-ml10 { margin-left: 10px !important; }
+  .md-ml20 { margin-left: 20px !important; }
+  .md-ml30 { margin-left: 30px !important; }
+  .md-ml40 { margin-left: 40px !important; }
+  .md-ml50 { margin-left: 50px !important; }
+  .md-ml60 { margin-left: 60px !important; }
+  .md-ml70 { margin-left: 70px !important; }
+  .md-ml80 { margin-left: 80px !important; }
+  .md-ml90 { margin-left: 90px !important; }
+}
 
 @media (min-width: 1200px) {
-  .lg-ptn  { padding-top: 0; }
-  .lg-pt10 { padding-top: 10px; }
-  .lg-pt20 { padding-top: 20px; }
-  .lg-pt30 { padding-top: 30px; }
-  .lg-pt40 { padding-top: 40px; }
-  .lg-pt50 { padding-top: 50px; }
-  .lg-pt60 { padding-top: 60px; }
-  .lg-pt70 { padding-top: 70px; }
-  .lg-pt80 { padding-top: 80px; }
-  .lg-pt90 { padding-top: 90px; }
+  .lg-ptn  { padding-top: 0 !important; }
+  .lg-pt10 { padding-top: 10px !important; }
+  .lg-pt20 { padding-top: 20px !important; }
+  .lg-pt30 { padding-top: 30px !important; }
+  .lg-pt40 { padding-top: 40px !important; }
+  .lg-pt50 { padding-top: 50px !important; }
+  .lg-pt60 { padding-top: 60px !important; }
+  .lg-pt70 { padding-top: 70px !important; }
+  .lg-pt80 { padding-top: 80px !important; }
+  .lg-pt90 { padding-top: 90px !important; }
+
+  .lg-mln  { margin-left: 0 !important; }
+  .lg-ml10 { margin-left: 10px !important; }
+  .lg-ml20 { margin-left: 20px !important; }
+  .lg-ml30 { margin-left: 30px !important; }
+  .lg-ml40 { margin-left: 40px !important; }
+  .lg-ml50 { margin-left: 50px !important; }
+  .lg-ml60 { margin-left: 60px !important; }
+  .lg-ml70 { margin-left: 70px !important; }
+  .lg-ml80 { margin-left: 80px !important; }
+  .lg-ml90 { margin-left: 90px !important; }
 }
 
-.color-inherit {
-  color: inherit;
-}
+/* Helpers */
+.color-inherit { color: inherit; }
+.ta-center { text-align: center; }
+.fw200 { font-weight: 200; }
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
 
 footer {
   padding: 40px;
@@ -235,3 +273,164 @@ footer a:active {
   text-decoration: none;  
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.header {
+  width: 100%;
+}
+
+.header.with-background {
+  min-height: 500px;
+}
+
+.header__title {
+  width: 300px;
+}
+
+.header__title .cursor {
+  border-left: 3pt solid #BC3A17;
+  font-size: 40px;
+  position: relative;
+  top: -4px;
+  left: 3px;
+}
+
+.header h1 {
+  margin-bottom: 15px;
+}
+
+.header p {
+  font-family: "Effra", sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+}
+
+.header__last-news {
+  position: absolute;
+  display: inline-block;  
+}
+
+.header__last-news .line {
+  font-weight: 300;
+  display: block;
+  white-space: nowrap;  
+  font-size: 15px;
+  line-height: 20px;
+  margin-top: 4px;
+
+  position: relative;
+  top: -10px;
+}
+
+.header__last-news .line:nth-child(1) {
+  transform: rotate(-9deg);
+  z-index: 1;
+}
+
+.header__last-news .line:nth-child(2) {
+  transform: rotate(-3deg);
+  position: relative;
+  left: 10px;
+}
+
+.header__last-news .line span {
+  background-color: #BC3A17;
+  color: white;
+  padding: 4px 7px;
+}
+
+.header__last-news a {
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+/* dont used */
+.header__news {
+  display: inline-block;
+  width: 180px;
+  height: 180px;
+  margin-left: 35px;
+  margin-bottom: 35px;
+  padding: 27px 20px;
+  color: white;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06b7d6+0,90e6ec+100 */
+  background: rgb(6,183,214); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(6,183,214,1) 0%, rgba(144,230,236,1) 100%); /* FF3.6-15 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(6,183,214,1)), color-stop(100%,rgba(144,230,236,1))); /* Chrome4-9,Safari4-5 */
+  background: -webkit-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Opera 11.10-11.50 */
+  background: -ms-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* IE10 preview */
+  background: linear-gradient(to bottom,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06b7d6', endColorstr='#90e6ec',GradientType=0 ); /* IE6-9 */
+}
+
+.header__news p {
+  font-size: 14pt;
+  font-weight: 400;
+  line-height: 18pt;
+}
+
+.header__news a {
+  color: inherit;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Header top */
+.header__top {
+  height: 100px;
+  padding-top: 15px;
+}
+
+.header__top .container > div {
+  display: inline-block;
+}
+
+.header.with-background .header__top {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#331f20+0,000000+100&1+0,0+100 */
+  background: -moz-linear-gradient(top,  rgba(51,31,32,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,31,32,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome4-9,Safari4-5 */
+  background: -webkit-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10-11.50 */
+  background: -ms-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* IE10 preview */
+  background: linear-gradient(to bottom,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331f20', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+.header__logo {
+  font-weight: 800;
+  font-size: 19px;
+}
+
+.header__links {
+  font-size: 17px;  
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .header__links {
+    width: 75%;
+  }
+}
+
+.header__links a {
+  color: inherit;
+}
+
+.header.with-background .header__logo,
+.header.with-background .header__links {
+  color: white;
+}
+
+.header__links a {
+  margin-left: 30px;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.header__links a.inactive {
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
+  cursor: default;
+  border-width: 0;
+}
+
+/* End of header top */
+

@@ -17,83 +17,186 @@
     <![endif]-->
 </head>
 <body>
-    <div class="container">
-        <div class="main-page__header">
-            <div class="main-page__header__profile">
-                <a href="#">
-                    <img src="">
-                </a>
-            </div>
-            <div class="main-page__title">
-                <h1>
-                    Летняя<br/>
-                    компьютерная<br/>
-                    школа
-                </h1>
-                <p>
-                    Алгоритмическое программирование для учеников 6–10 классов на загородной базе
-                </p>
-            </div>
-            <div class="main-page__header__news">
-                <p>
-                    Опубликованы
-                    <a href="#">списки зачисленных в&nbsp;ЛКШ.Зима</a>
-                </p>
+    <div class="header with-background">
+        <div class="header__top">
+            <div class="container">
+                <div class="header__logo">
+                    ЛКШ
+                </div>
+                <div class="header__links">
+                    <a href="#">Учёба и жизнь</a>
+                    <a href="#">Поступление</a>
+                    <nobr><a href="#" class="inactive">Оплата и проезд</a></nobr>
+                    <a href="#" class="md-ml90">Зимняя смена</a>
+                </div>
+                <div class="header__profile">
+                    <a href="#">
+                        <img src="">
+                    </a>
+                </div>
             </div>
         </div>
-
-        <div class="content">
-            <div class="text-block">
-                <h3>Алгоритмическое программирование</h3>
-                <p>
-                    В основном в ЛКШ учат алгоритмическому программированию (т. н. computer science) — алгоритмам, структурам данных, методам их построения и анализа. Акцент делается на применении их в конкретных задачах, подобных предлагаемым на олимпиадах по информатике, и на получении в итоге работающей программы.
-                </p>
-				<a class="button">
-					Подать заявку
-				</a>
-				<div class="comment">
-					<div class="black"><span>31 декабря 2015, Липецкая область.</span></div><br>
-					<div class="black"><span>Командная олимпиада</span></div>
-				</div>
+        <div class="container">            
+            <div class="header__title">
+                <h1>
+                    Летняя
+                    <div class="header__last-news">
+                        <div class="line">
+                            <span>
+                                Опубликованы <a href="#">списки</a>
+                            </span>
+                        </div>
+                        <div class="line">
+                            <span>
+                                <a href="#">зачисленных в зимнюю смену</a>
+                            </span>
+                        </div>
+                    </div>
+                    <br/>
+                    компьютерная<br/>
+                    школа <span class="cursor"></span>
+                </h1>                
             </div>
+            <div class="comment">
+                <div class="black"><span>База «Берендеевы поляны» под Костромой, август 2013.</span></div>
+                <div class="black"><span>Паша Труфанов, Матвей Асландуков и Саша Шибаев</span></div>
+                <div class="black"><span>обсуждают, пройдёт ли решение перебором</span></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <div class="school-announces row">
+                <div class="col sm-12 md-6">
+                    <div class="school-announce red">
+                        <div class="title">
+                            Зимняя смена
+                        </div>
+                        <div class="dates">
+                            28 декабря —<br/>6 января
+                        </div>
+                        <div class="description">
+                            <p>
+                                подмосковый пансионат, <br />
+                                лучшие участники летних смен 2016
+                            </p>
+                        </div>
+                        <div>
+                            <a class="button">
+                                Подать заявку
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col sm-12 md-6">
+                    <div class="school-announce green">
+                        <div class="title">
+                            Летние смены
+                        </div>
+                        <div class="dates">
+                            Июль и август<br/>2017
+                        </div>
+                        <div class="description">
+                            <p>
+                                загородная база, 
+                                вступительный экзамен
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Алгоритмическое программирование</h2>
 
             <div class="row">
                 <div class="text-block  col xs-12 md-5">
-                    <h3>Для новичков</h3>
+                    <h3>Для начинающих</h3>
                     <p>
-                        Тех, кто программирует недавно, мы учим писать хороший код, тренируем придумывать алгоритмы для нестандартных задач и вооружаем математическим аппаратом. 
+                        Понятный и лаконичный код на Питоне или С++
+                    </p>
+                    <p>
+                        Базовые алгоритмы и структуры данных в теории и в олимпиадных задачах
+                    </p>
+                    <p>
+                        Математика для решения нестандартных задач: комбинаторика, теория графов, начала теории чисел
                     </p>
                 </div>
                 <div class="text-block  col xs-12 md-offset-1 md-6">
                     <h3>Для опытных олимпиадников</h3>
                     <p>
-                        Тех, кто уже освоил продвинутые алгоритмы, знакомим с промышленной разработкой и машинным обучением.
+                        Продвинутые алгоритмы и структуры данных, методы их построения и анализа
                     </p>
                     <p>
-                        <a href="#">Учебные параллели ЛКШ.Лето</a>
+                        Промышленное программирование — разработка полноценного продукта для людей
+                    </p>
+                    <p>
+                        Машинное обучение
                     </p>
                 </div>
             </div>
+        </div>
+
+        <div class="image-slider">
+            <div class="image">
+                <div class="container">
+                    <h2>Спорт и танцы</h2>
+                    <p>Во второй половине дня мы играем в&nbsp;спортивные игры, учимся танцевать и&nbsp;крутить пои.</p>
+                    <p class="description">
+                        Август 2013. Матч по&nbsp;женскому футболу
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="switcher">
+                    <div class="element active">
+                        <img src="images/main/leisure-preview-13.png">
+                    </div>
+                    <div class="element">
+                        <img src="images/main/leisure-preview-14.png">
+                    </div>
+                    <div class="element">
+                        <img src="images/main/leisure-preview-15.png">
+                    </div>
+                    <div class="element">
+                        <img src="images/main/leisure-preview-16.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>
+                Две с половиной тысячи школьников с 1999 года
+            </h2>
 
             <div class="portraits">
             </div>
 
-            <div class="text-block">
-                <h3>Активный отдых</h3>
+            <div class="ta-center">
+                <h2 class="fw400">86 из 108</h2>
                 <p>
-                    (О том, что школа проходит за городом. И даже самые увлечённые программисты не сидят за компьютерами круглыми сутками, а играют в волейбол, ставят спектакли, учатся рисовать и оказывать первую помощь.)
-                </p>
-                <p>
-                    <a href="#">Как проходит смена</a>
+                    призёров и победителей заключительного этапа Всероссийской олимпиады 2016 года учились в ЛКШ
                 </p>
             </div>
 
             <div class="sponsors">
-                <h3>Нас поддерживают</h3>
+                <img src="images/main/logos/logo-01.png">
+                <img src="images/main/logos/logo-02.png">
+                <img src="images/main/logos/logo-03.png">
+                <img src="images/main/logos/logo-04.png">
+                <img src="images/main/logos/logo-05.png">
+                <img src="images/main/logos/logo-06.png">
+                <img src="images/main/logos/logo-07.png">
+                <img src="images/main/logos/logo-08.png">
+                <img src="images/main/logos/logo-09.png">
             </div>
         </div>
+    </div>
 
-        <footer>
+    <footer>
+        <div class="container">
             <div class="row">
                 <div class="col xs-12 lg-7">
                     Сделано в <a href="#">Школе стажёров Бюро Горбунова</a> в 2016 году 
@@ -101,19 +204,18 @@
                 <div class="col xs-12 lg-5 pt10 lg-ptn">
                     <div class="row">
                         <div class="col xs-4 sm-2 lg-4">
-                            <a href="#">Архив</a>
                         </div>
                         <div class="col xs-4 sm-3 lg-4">
-                            <a href="#">Спонсорам</a>
+                            <a href="#">Архив</a>
                         </div>
                         <div class="col xs-4 sm-2 lg-4">
                             <a href="mailto:lksh@lksh.ru">lksh@lksh.ru</a>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>    
+            </div>        
+        </div>
+    </footer>
 
     <script src="assets/js/scripts.js"></script>
 </body>

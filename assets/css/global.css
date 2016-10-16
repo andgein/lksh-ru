@@ -314,8 +314,8 @@ footer a:active {
 }
 
 .header.with-background {
-  height: 500px;
-  min-height: 500px;
+  height: 540px;
+  min-height: 540px;
   background-size: cover;
 }
 
@@ -324,7 +324,7 @@ footer a:active {
 }
 
 .header > .container {
-  height: 400px;
+  height: 440px;
   position: relative;
 }
 
@@ -450,6 +450,11 @@ footer a:active {
   font-size: 19px;
 }
 
+.header__logo a {
+  color: inherit;
+  border-width: 0;
+}
+
 .header__links {
   font-size: 17px;  
   text-align: center;
@@ -457,7 +462,8 @@ footer a:active {
 
 @media (min-width: 992px) {
   .header__links {
-    width: 75%;
+    /* width: 75%; */
+    width: 30%;
   }
 }
 
@@ -484,6 +490,7 @@ footer a:active {
     background-color: #BC3A17;
     color: white;
     padding: 4px 7px;
+    border-width: 0;
 }
 
 .white .header__links a {
@@ -508,6 +515,22 @@ footer a:active {
 
 .header__profile a {
   border-width: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url('../../images/user-black.png');
+}
+
+.header__profile a:hover {
+  background-image: url('../../images/user-black-hover.png');
+}
+
+.white .header__profile a {
+  background-image: url('../../images/user-white.png');
+}
+
+.white .header__profile a:hover {
+  background-image: url('../../images/user-white-hover.png');
 }
 /* End of header top */
 

@@ -7,6 +7,12 @@ a {
 	border-color: rgba(188, 58, 23, 0.5);
 }
 
+a:hover,
+a:focus,
+a:active {
+	border-bottom-color: rgba(188, 58, 23, 0.2);
+}
+
 .apostrophe {
 	font-family: "Clear Sans";
 	position: relative;	
@@ -89,7 +95,7 @@ a {
 }
 
 .stuff p {
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 18px;
 	min-height: 60px;
 }
@@ -104,7 +110,7 @@ a {
 .how-to-get th {
 	font-size: 19px;
 	text-align: left;
-	padding: 10px 40px 5px 0;
+	padding: 10px 25px 5px 0;
 }
 
 .how-to-get thead tr {

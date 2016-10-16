@@ -19,6 +19,7 @@ html {
 body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 
@@ -85,7 +86,7 @@ img {
 h1 {
   font-size: 69px;
   line-height: 50px;
-  font-weight: 600;
+  font-weight: 800;
   margin-bottom: 30px;
 }
 
@@ -123,7 +124,7 @@ p + p {
 .button {
   background: #bc3a17;
   color: #fff;
-  padding: 14px 24px;
+  padding: 15px 24px;
   display: inline-block;
   font-size: 19px;
   position: relative;
@@ -274,13 +275,13 @@ p + p {
 .fw400 { font-weight: 400; }
 .fw500 { font-weight: 500; }
 .fs13 { font-size: 13px; }
-.fs14 { font-size: 14px; line-height: 18px;}
+.fs14 { font-size: 15px; line-height: 18px;}
 .fs15 { font-size: 15px; }
 .fs16 { font-size: 16px; }
 .fs17 { font-size: 17px; }
 
 footer {
-  padding: 40px;
+  padding: 40px 0;
   font-size: 14pt;
   line-height: 1.3em;
 }
@@ -333,11 +334,25 @@ footer a:active {
 }
 
 .header__title .cursor {
-  border-left: 3pt solid #BC3A17;
-  font-size: 40px;
+  border-left: 4px solid #BC3A17;
+  font-size: 45px;
   position: relative;
   top: -4px;
   left: 3px;
+}
+
+.header .header__subtitle {
+  margin-top: 20px;
+  width: 450px;  
+}
+
+.header .header__subtitle p {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.header .header__subtitle p + p {
+  margin-top: 5px;
 }
 
 .header h1 {
@@ -540,7 +555,7 @@ footer a:active {
   position: absolute;
   bottom: -25px;
   padding: 8px;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 20px;
 }
 
@@ -555,8 +570,12 @@ footer a:active {
 /* End of description-black */
 
 .ruble:after {  
-    content: '-';
-    position: relative;
-    left: -0.65em;
-    top: 0.1em;
+  content: '-';
+  position: relative;
+  left: -0.65em;
+  top: 0.1em;
+}
+
+.caps {
+  letter-spacing: 0.05em;
 }

@@ -43,6 +43,7 @@
 
 .school-announce .dates {
     font-size: 40px;
+    line-height: 37px;
     font-weight: 800;
     border-bottom: 1px solid;
     padding-bottom: 7px;
@@ -146,7 +147,6 @@
 .portrait:nth-child(20) { left: 390px; top: 30px; }
 
 
-
 .portrait.large img {
 	width: 270px;
 	min-width: 250px;
@@ -198,12 +198,12 @@
 .portrait.with-cite .about {
     font-size: 15px;
     margin: 5px 0 10px;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 .portrait.with-cite .text {
     font-size: 19px;
-    font-weight: 800;
+    font-weight: 400;
     line-height: 21px;
 }
 /* End of portraits */

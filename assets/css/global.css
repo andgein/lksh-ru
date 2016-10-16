@@ -100,7 +100,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 800;
-  margin: 30px 0 6px;
+  margin: 10px 0 6px;
 }
 
 p {
@@ -316,7 +316,6 @@ footer a:active {
 .header.with-background {
   height: 500px;
   min-height: 500px;
-  background-size: cover;
 }
 
 .header > .container {
@@ -324,12 +323,8 @@ footer a:active {
   position: relative;
 }
 
-.header .description {
-  left: 7px;
-}
-
 .header__title {
-  width: 450px;
+  width: 300px;
 }
 
 .header__title .cursor {

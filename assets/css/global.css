@@ -316,6 +316,11 @@ footer a:active {
 .header.with-background {
   height: 500px;
   min-height: 500px;
+  background-size: cover;
+}
+
+.header .description {
+  padding-left: 0;
 }
 
 .header > .container {
@@ -324,7 +329,7 @@ footer a:active {
 }
 
 .header__title {
-  width: 300px;
+  width: 450px;
 }
 
 .header__title .cursor {

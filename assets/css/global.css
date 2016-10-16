@@ -100,7 +100,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 800;
-  margin: 10px 0 6px;
+  margin: 30px 0 6px;
 }
 
 p {
@@ -118,26 +118,6 @@ p + h3 {
 
 p + p {
   margin-top: 12px;
-}
-
-.comment {
-  font-size: 15px;
-}
-
-.black {
-  background: #000;
-  padding: 6px 7px 6px 5px;
-  display: inline-block;
-  position: relative;
-}
-
-.black span {
-  color: #fff;
-}
-
-.black ~ .black {
-	top: -3px;
-	padding-top: 0px; 
 }
 
 .button {
@@ -170,6 +150,9 @@ p + p {
 }
 */
 
+.mtn  { margin-top: 0px !important;  }
+.mt5  { margin-top: 5px !important;  }
+
 .mt10 { margin-top: 10px !important; }
 .mt20 { margin-top: 20px !important; }
 .mt30 { margin-top: 30px !important; }
@@ -179,6 +162,16 @@ p + p {
 .mt70 { margin-top: 70px !important; }
 .mt80 { margin-top: 80px !important; }
 .mt90 { margin-top: 90px !important; }
+
+.mb10 { margin-bottom: 10px !important; }
+.mb20 { margin-bottom: 20px !important; }
+.mb30 { margin-bottom: 30px !important; }
+.mb40 { margin-bottom: 40px !important; }
+.mb50 { margin-bottom: 50px !important; }
+.mb60 { margin-bottom: 60px !important; }
+.mb70 { margin-bottom: 70px !important; }
+.mb80 { margin-bottom: 80px !important; }
+.mb90 { margin-bottom: 90px !important; }
 
 .ml10 { margin-left: 10px !important; }
 .ml20 { margin-left: 20px !important; }
@@ -200,7 +193,37 @@ p + p {
 .pt80 { padding-top: 80px !important; }
 .pt90 { padding-top: 90px !important; }
 
-@media (min-width: 992px) {
+.xs-visible { display: block; }
+.xs-hidden { display: none; }
+
+@media (min-width: 768px) {
+  .sm-mtn  { margin-top: 0 !important; }
+  .sm-mt10 { margin-top: 10px !important; }
+  .sm-mt20 { margin-top: 20px !important; }
+  .sm-mt30 { margin-top: 30px !important; }
+  .sm-mt40 { margin-top: 40px !important; }
+  .sm-mt50 { margin-top: 50px !important; }
+  .sm-mt60 { margin-top: 60px !important; }
+  .sm-mt70 { margin-top: 70px !important; }
+  .sm-mt80 { margin-top: 80px !important; }
+  .sm-mt90 { margin-top: 90px !important; }
+
+  .sm-mln  { margin-left: 0 !important; }
+  .sm-ml10 { margin-left: 10px !important; }
+  .sm-ml20 { margin-left: 20px !important; }
+  .sm-ml30 { margin-left: 30px !important; }
+  .sm-ml40 { margin-left: 40px !important; }
+  .sm-ml50 { margin-left: 50px !important; }
+  .sm-ml60 { margin-left: 60px !important; }
+  .sm-ml70 { margin-left: 70px !important; }
+  .sm-ml80 { margin-left: 80px !important; }
+  .sm-ml90 { margin-left: 90px !important; }
+
+  .sm-visible { display: block; }
+  .sm-hidden { display: none; }
+}
+
+@media (min-width: 992px) {  
   .md-mln  { margin-left: 0 !important; }
   .md-ml10 { margin-left: 10px !important; }
   .md-ml20 { margin-left: 20px !important; }
@@ -211,6 +234,9 @@ p + p {
   .md-ml70 { margin-left: 70px !important; }
   .md-ml80 { margin-left: 80px !important; }
   .md-ml90 { margin-left: 90px !important; }
+
+  .md-visible { display: block; }
+  .md-hidden { display: none; }
 }
 
 @media (min-width: 1200px) {
@@ -235,6 +261,9 @@ p + p {
   .lg-ml70 { margin-left: 70px !important; }
   .lg-ml80 { margin-left: 80px !important; }
   .lg-ml90 { margin-left: 90px !important; }
+
+  .lg-visible { display: block; }
+  .lg-hidden { display: none; }
 }
 
 /* Helpers */
@@ -244,6 +273,11 @@ p + p {
 .fw300 { font-weight: 300; }
 .fw400 { font-weight: 400; }
 .fw500 { font-weight: 500; }
+.fs13 { font-size: 13px; }
+.fs14 { font-size: 14px; line-height: 18px;}
+.fs15 { font-size: 15px; }
+.fs16 { font-size: 16px; }
+.fs17 { font-size: 17px; }
 
 footer {
   padding: 40px;
@@ -282,6 +316,7 @@ footer a:active {
 .header.with-background {
   height: 500px;
   min-height: 500px;
+  background-size: cover;
 }
 
 .header > .container {
@@ -289,8 +324,12 @@ footer a:active {
   position: relative;
 }
 
+.header .description {
+  left: 7px;
+}
+
 .header__title {
-  width: 300px;
+  width: 450px;
 }
 
 .header__title .cursor {
@@ -395,7 +434,7 @@ footer a:active {
   display: inline-block;
 }
 
-.header.with-background .header__top {
+.header.with-background .header__top.white {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#331f20+0,000000+100&1+0,0+100 */
   background: -moz-linear-gradient(top,  rgba(51,31,32,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,31,32,1)), color-stop(100%,rgba(0,0,0,0))); /* Chrome4-9,Safari4-5 */
@@ -428,19 +467,38 @@ footer a:active {
 
 .header.with-background .header__logo,
 .header.with-background .header__links {
+  color: black;
+}
+
+.header.with-background .white .header__logo,
+.header.with-background .white .header__links {
   color: white;
 }
 
 .header__links a {
   margin-left: 30px;
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__links a.active {
+    background-color: #BC3A17;
+    color: white;
+    padding: 4px 7px;
+}
+
+.white .header__links a {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
 .header__links a.inactive {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgba(0, 0, 0, 0.3);
   pointer-events: none;
-  cursor: default;
+  cursor: block;
   border-width: 0;
+}
+
+.white .header__links a.inactive {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .header__profile {
@@ -468,3 +526,10 @@ footer a:active {
   background-color: black;
 }
 /* End of description-black */
+
+.ruble:after {  
+    content: '-';
+    position: relative;
+    left: -0.65em;
+    top: 0.1em;
+}

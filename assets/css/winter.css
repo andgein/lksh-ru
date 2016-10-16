@@ -41,11 +41,15 @@ a:not(.button):hover {
 	width: 1em;
     height: 0.45em;
     border-bottom: 3px solid #BC3A17;
-    -webkit-transform: translateY(10px) translateX(0px) rotate(45deg);
-    -o-transform: translateY(10px) translateX(0px) rotate(45deg);
-    -moz-transform: translateY(10px) translateX(0px) rotate(45deg);
-    transform: translateY(10px) translateX(0px) rotate(45deg);
+    -webkit-transform: translateY(10px) translateX(-10px) rotate(45deg);
+    -o-transform: translateY(10px) translateX(-10px) rotate(45deg);
+    -moz-transform: translateY(10px) translateX(-10px) rotate(45deg);
+    transform: translateY(10px) translateX(-10px) rotate(45deg);
     position: absolute;
+}
+
+.parallels .parallels-name.shift-left:first-letter {
+	margin-left: -10px;
 }
 
 .parallels .parallels-name sup {
@@ -59,7 +63,7 @@ a:not(.button):hover {
 
 .parallels .parallels-info {
 	font-size: 15px;
-	line-height: 19px;
+	line-height: 18px;
 	padding-top: 10px;	
 }
 
@@ -71,6 +75,7 @@ a:not(.button):hover {
 /* Special dates */
 .special-date .date {
 	font-size: 75px;
+	line-height: 54px;
 	font-weight: 100;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	letter-spacing: -5px;
@@ -111,7 +116,7 @@ a:not(.button):hover {
 
 .stuff p {
 	font-size: 15px;
-	line-height: 18px;
+	line-height: 17px;
 	min-height: 60px;
 }
 
@@ -138,6 +143,6 @@ a:not(.button):hover {
 }
 
 .how-to-get thead tr {
-	border-bottom: 2px solid #bbb;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
 }
 /* End of how to get */

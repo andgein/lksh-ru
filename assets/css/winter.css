@@ -10,7 +10,11 @@ a {
 a:hover,
 a:focus,
 a:active {
-	border-bottom-color: rgba(188, 58, 23, 0.2);
+	border-bottom-color: rgba(255, 54, 0, 0.5);
+}
+
+a:not(.button):hover {
+    color: #ff3600;
 }
 
 .apostrophe {
@@ -31,6 +35,17 @@ a:active {
 
 .parallels .parallels-name .apostrophe {
 	left: -0.2em;
+}
+
+.parallels .parallels-name .cross-line {
+	width: 1em;
+    height: 0.45em;
+    border-bottom: 3px solid #BC3A17;
+    -webkit-transform: translateY(10px) translateX(0px) rotate(45deg);
+    -o-transform: translateY(10px) translateX(0px) rotate(45deg);
+    -moz-transform: translateY(10px) translateX(0px) rotate(45deg);
+    transform: translateY(10px) translateX(0px) rotate(45deg);
+    position: absolute;
 }
 
 .parallels .parallels-name sup {
@@ -98,6 +113,15 @@ a:active {
 	font-size: 15px;
 	line-height: 18px;
 	min-height: 60px;
+}
+
+.stuff .prohibited {
+	position: relative;
+	top: -40px;
+}
+
+.stuff .prohibited p {
+	color: #BC3A17;
 }
 /* End of stuff */
 

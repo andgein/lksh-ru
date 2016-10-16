@@ -318,6 +318,7 @@ footer a:active {
   height: 540px;
   min-height: 540px;
   background-size: cover;
+  background-position: center center;
 }
 
 .header .description {
@@ -433,7 +434,7 @@ footer a:active {
 
 .header__news a {
   color: inherit;
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Header top */
@@ -510,7 +511,7 @@ footer a:active {
 }
 
 .white .header__links a {
-  border-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .header__links a.inactive {

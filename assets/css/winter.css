@@ -4,13 +4,13 @@
 
 a {
 	color: #BC3A17;
-	border-color: rgba(188, 58, 23, 0.5);
+	border-color: rgba(188, 58, 23, 0.2);
 }
 
 a:hover,
 a:focus,
 a:active {
-	border-bottom-color: rgba(255, 54, 0, 0.5);
+	border-bottom-color: rgba(255, 54, 0, 0.2);
 }
 
 a:not(.button):hover {
@@ -18,7 +18,6 @@ a:not(.button):hover {
 }
 
 .apostrophe {
-	font-family: "Clear Sans";
 	position: relative;	
 	line-height: 0;
 }
@@ -29,7 +28,7 @@ a:not(.button):hover {
 	line-height: 120px;
 	font-weight: 100;
 	letter-spacing: 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	margin-top: 20px;
 }
 
@@ -77,7 +76,7 @@ a:not(.button):hover {
 	font-size: 75px;
 	line-height: 54px;
 	font-weight: 100;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	letter-spacing: -5px;
 }
 
@@ -98,7 +97,7 @@ a:not(.button):hover {
 .price {
     font-size: 80px;
     font-weight: 100;    
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .price:first-letter {
@@ -120,9 +119,14 @@ a:not(.button):hover {
 	min-height: 60px;
 }
 
-.stuff .prohibited {
+.stuff > .row {
 	position: relative;
-	top: -40px;
+}
+
+.stuff .prohibited {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
 }
 
 .stuff .prohibited p {
@@ -143,6 +147,6 @@ a:not(.button):hover {
 }
 
 .how-to-get thead tr {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
 }
 /* End of how to get */

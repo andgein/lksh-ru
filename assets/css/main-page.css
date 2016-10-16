@@ -55,11 +55,11 @@
 }
 
 .school-announce.red .dates {
-	border-color: rgba(188, 58, 23, 0.3);
+	border-color: rgba(188, 58, 23, 0.2);
 }
 
 .school-announce.green .dates {
-	border-color: rgba(115, 147, 0, 0.3);
+	border-color: rgba(115, 147, 0, 0.2);
 }
 /* End of school announce */
 

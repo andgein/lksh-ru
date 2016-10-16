@@ -521,6 +521,10 @@ footer a:active {
   line-height: 20px;
 }
 
+.description-black .line {
+  white-space: nowrap;
+}
+
 .description-black .line span {
   padding: 5px 7px;
   background-color: black;

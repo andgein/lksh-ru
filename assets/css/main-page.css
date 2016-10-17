@@ -28,6 +28,19 @@
 	color: #739300;
 }
 
+.school-announces a.not-text-link span:not(.title) {
+	display: block;
+}
+
+.school-announces a.not-text-link:hover .school-announce {
+	background-color: #ffebe3;
+	color: #ff3600;
+}
+
+.school-announces a.not-text-link:hover .title {
+	background-color: #ff3600;
+}
+
 .school-announce .title {
 	display: inline-block;
     color: white;
@@ -69,6 +82,26 @@
 
 .school-announce.green .dates {
 	border-color: rgba(115, 147, 0, 0.2);
+}
+
+.school-announces .button-holder {
+	height: 50px;
+}
+
+.school-announces a.not-text-link + .button-container {
+	position: relative;
+	top: -90px;
+	left: 20px;
+}
+
+.school-announce .details {
+	float: right;
+	/right: 10px;
+	color: #B2B5AB;
+	font-size: 15px;
+	font-weight: 800;
+	margin-top: 10px;
+	margin-right: -15px;
 }
 /* End of school announce */
 

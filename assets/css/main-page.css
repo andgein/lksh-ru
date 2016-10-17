@@ -109,6 +109,7 @@
 /* End of school announce */
 
 /* Sponsors */
+/*
 .sponsors {
 	margin: -50px 0 20px;
 	text-align: center;	
@@ -117,20 +118,40 @@
     flex-wrap: wrap;
 }
 
-.sponsors img {	
-	height: 75px;
-	width: auto;
-}
-
 .sponsors a {
 	border-width: 0;
 }
 
+
+.sponsors img {	
+	height: 75px;
+	width: auto;
+}
+*/
+.sponsors {
+	margin: -50px 0 20px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.sponsors a {
+	border-width: 0;
+	max-height: 100px;
+	min-height: 80px;
+	margin-right: 2%;
+}
+
+.sponsors a:last-child {
+	margin-right: 0;
+}
+/*
 @media (max-width: 1100px) {
 	.sponsors img {
 		margin: 0 12px;
 	}
 }
+*/
 /* End of sponsors */
 
 /* Image slider */

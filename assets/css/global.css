@@ -597,7 +597,7 @@ footer a {
 .description-black {
   color: white;
   position: absolute;
-  bottom: -24px;
+  bottom: -22px;
   padding: 8px;
   font-size: 15px;
   line-height: 20px;
@@ -608,7 +608,7 @@ footer a {
 }
 
 .description-black .line span {
-  padding: 0px 7px 10px;
+  padding: 3px 7px 7px;
   background-color: black;
 }
 

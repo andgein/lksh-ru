@@ -148,14 +148,22 @@ footer a:active {
 	margin-top: 12px;
 }
 
+.how-to-get thead tr:first-child th {
+	font-weight: 700;
+}
+
 .how-to-get td,
 .how-to-get th {
-	font-size: 19px;
+	font-size: 15px;
 	text-align: left;
 	padding: 10px 25px 5px 0;
 }
 
-.how-to-get thead tr {
+.how-to-get thead tr:not(:first-child) th {
+	padding-top: 0;
+}
+
+.how-to-get thead tr:last-child {
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
 }
 /* End of how to get */

@@ -17,6 +17,18 @@ a:not(.button):hover {
     color: #ff3600;
 }
 
+footer a:hover,
+footer a:focus,
+footer a:active {
+  border-bottom-color: rgba(255, 54, 0, 0.2);
+}
+
+.winter-announce {
+	font-size: 25px;
+	font-weight: 500;
+	margin-top: 70px;	
+}
+
 .apostrophe {
 	position: relative;	
 	line-height: 0;
@@ -28,7 +40,7 @@ a:not(.button):hover {
 	line-height: 120px;
 	font-weight: 100;
 	letter-spacing: 20px;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	margin-top: 20px;
 }
 
@@ -65,10 +77,6 @@ a:not(.button):hover {
 	line-height: 18px;
 	padding-top: 10px;	
 }
-
-.parallels .col.md-6 .parallels-info {
-	max-width: 200px;
-}
 /* End of parallels */
 
 /* Special dates */
@@ -76,7 +84,7 @@ a:not(.button):hover {
 	font-size: 75px;
 	line-height: 54px;
 	font-weight: 100;
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	letter-spacing: -5px;
 }
 
@@ -97,7 +105,7 @@ a:not(.button):hover {
 .price {
     font-size: 80px;
     font-weight: 100;    
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	margin-bottom:  5px;
 }
 
@@ -148,6 +156,6 @@ a:not(.button):hover {
 }
 
 .how-to-get thead tr {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
 }
 /* End of how to get */

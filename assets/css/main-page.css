@@ -9,7 +9,9 @@
 /* School announce */
 
 .school-announces {
-	margin-top: 50px;
+	margin-top: 50px;	
+    margin-left: -35px;
+    margin-right: -35px;
 }
 
 .school-announce {
@@ -44,10 +46,13 @@
 .school-announce .dates {
     font-size: 40px;
     line-height: 37px;
-    font-weight: 800;
-    border-bottom: 1px solid;
+    font-weight: 800;    
     padding-bottom: 7px;
     padding-top: 10px;
+}
+
+.school-announce .dates.with-border {
+	border-bottom: 1px solid;
 }
 
 .school-announce .description {
@@ -69,7 +74,8 @@
 
 /* Sponsors */
 .sponsors {
-	margin: 50px 0 20px;
+	margin: 20px 0 20px;
+	text-align: center;
 }
 
 .sponsors a {
@@ -77,7 +83,7 @@
 }
 
 .sponsors img {
-	margin: 0 15px;
+	margin: 0 12px;
 }
 /* End of sponsors */
 
@@ -187,7 +193,7 @@
 }
 
 .portrait.with-cite-right img {
-	margin-right: 140px;
+	margin-right: 145px;
 }
 
 .portrait.with-cite .title {

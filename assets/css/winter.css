@@ -56,6 +56,10 @@
 	line-height: 18px;
 	padding-top: 10px;	
 }
+
+.parallels .md-6 .parallels-info {
+	max-width: 400px;
+}
 /* End of parallels */
 
 /* Special dates */

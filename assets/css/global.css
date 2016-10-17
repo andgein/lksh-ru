@@ -219,6 +219,17 @@ p + p {
   .sm-ml80 { margin-left: 80px !important; }
   .sm-ml90 { margin-left: 90px !important; }
 
+  .sm-ptn { padding-top: 0px !important; }
+  .sm-pt10 { padding-top: 10px !important; }
+  .sm-pt20 { padding-top: 20px !important; }
+  .sm-pt30 { padding-top: 30px !important; }
+  .sm-pt40 { padding-top: 40px !important; }
+  .sm-pt50 { padding-top: 50px !important; }
+  .sm-pt60 { padding-top: 60px !important; }
+  .sm-pt70 { padding-top: 70px !important; }
+  .sm-pt80 { padding-top: 80px !important; }
+  .sm-pt90 { padding-top: 90px !important; }
+
   .sm-visible { display: block; }
   .sm-hidden { display: none; }
 }

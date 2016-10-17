@@ -118,6 +118,11 @@
 /* End of image slider */
 
 /* Portraits */
+.portraits-header {
+	z-index: 6;
+	position: relative;
+}
+
 .portraits {
 	height: 700px;
 	position: relative;

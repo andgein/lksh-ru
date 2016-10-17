@@ -292,8 +292,8 @@ p + p {
 .mw600 { max-width: 600px; }
 
 footer {
-  padding: 40px 0;
-  font-size: 14pt;
+  padding: 70px 0 40px;
+  font-size: 15px;
   line-height: 1.3em;
 }
 

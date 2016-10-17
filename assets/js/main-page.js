@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	var PARALLAX_COEFFICIENT = 0.2;
+	var PARALLAX_COEFFICIENT = 0.1;
 
 	var $container = $('.portraits')
 	var $portraits = $container.find('.portrait');

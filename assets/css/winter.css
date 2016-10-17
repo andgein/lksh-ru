@@ -14,7 +14,7 @@ a:active {
 }
 
 a:not(.button):hover {
-    color: #ff3600;
+    color: #ed3200;
 }
 
 footer a:hover,
@@ -134,7 +134,7 @@ footer a:active {
 
 .stuff .prohibited {
 	position: absolute;
-	bottom: 10px;
+	bottom: 20px;
 	right: 0;
 }
 

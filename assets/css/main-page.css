@@ -34,11 +34,11 @@
 
 .school-announces a.not-text-link:hover .school-announce {
 	background-color: #ffebe3;
-	color: #ff3600;
+	color: #ed3200;
 }
 
 .school-announces a.not-text-link:hover .title {
-	background-color: #ff3600;
+	background-color: #ed3200;
 }
 
 .school-announce .title {
@@ -109,6 +109,8 @@
 .sponsors {
 	margin: -50px 0 20px;
 	text-align: center;
+    display: flex;
+    justify-content: space-between;
 }
 
 .sponsors a {
@@ -116,7 +118,7 @@
 }
 
 .sponsors img {
-	margin: 0 12px;
+	/* margin: 0 12px; */
 }
 /* End of sponsors */
 

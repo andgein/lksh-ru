@@ -134,7 +134,8 @@ a.button {
 }
 
 a.button:hover {
-  background: #ff3600 !important;
+  background: #ed3200 !important;
+  box-shadow: 5px 5px 0 rgba(156, 128, 125, 1);
   border: 0;
 }
 
@@ -432,7 +433,11 @@ footer a {
 .header__last-news .line span {
   background-color: #BC3A17;
   color: white;
-  padding: 4px 7px;
+  padding: 2px 7px 7px;
+}
+
+.header__last-news .line span:hover {
+  background-color: #ed3200;
 }
 
 .header__last-news a {

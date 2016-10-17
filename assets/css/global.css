@@ -477,6 +477,10 @@ footer a:active {
   background-color: #ed3200;
 }
 
+.header__last-news:hover {
+  cursor: pointer;
+}
+
 .header__last-news a,
 .header__last-news a:hover,
 .header__last-news a:active,

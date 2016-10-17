@@ -101,7 +101,7 @@ h3 {
   font-size: 20px;
   line-height: 24px;
   font-weight: 800;
-  margin: 10px 0 6px;
+  margin: 12px 0 6px;
 }
 
 p {
@@ -152,6 +152,7 @@ p + p {
 
 .mt10 { margin-top: 10px !important; }
 .mt20 { margin-top: 20px !important; }
+.mt26 { margin-top: 26px !important; }
 .mt30 { margin-top: 30px !important; }
 .mt40 { margin-top: 40px !important; }
 .mt50 { margin-top: 50px !important; }
@@ -610,16 +611,12 @@ footer a:active {
   background-size: 100%;
 }
 
-.header__profile a:hover {
-  background-image: url('../../images/user-black-hover.png');
-}
-
 .white .header__profile a {
   background-image: url('../../images/user-white.png');
 }
 
-.white .header__profile a:hover {
-  background-image: url('../../images/user-white-hover.png');
+.header__profile a:hover {
+  background-image: url('../../images/user-hover.png');
 }
 /* End of header top */
 

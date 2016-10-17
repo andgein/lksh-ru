@@ -608,8 +608,16 @@ footer a {
 }
 
 .description-black .line span {
-  padding: 5px 7px;
+  padding: 0px 7px 10px;
   background-color: black;
+}
+
+.description-black .line:first-child span {
+  padding-top: 5px;
+}
+
+.description-black .line:last-child span {
+  padding-bottom: 5px;
 }
 /* End of description-black */
 

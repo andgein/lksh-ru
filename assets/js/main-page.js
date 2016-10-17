@@ -1,3 +1,5 @@
+var sqr = function(x) { return x * x; }
+
 $(document).ready(function() {
 	var PARALLAX_COEFFICIENT = 0.1;
 
@@ -7,7 +9,6 @@ $(document).ready(function() {
 	var initParallax = function($elements) {
 		$elements.each(function() {
 			var $self = $(this);
-			// $self.data('init-left', $self.css('left'));
 			$self.data('init-top', $self.css('top'));
 
 			for (var level = 1; level <= 4; level++)
@@ -26,7 +27,7 @@ $(document).ready(function() {
 			var diff = scrollTop - containerTop;
 			$portraits.each(function() {
 				var $self = $(this);
-				var coeff = (5 - $self.data('level')) * PARALLAX_COEFFICIENT;
+				var coeff = sqr(5 - $self.data('level')) * PARALLAX_COEFFICIENT / 2;
 				var top = Math.floor(parseInt($self.data('init-top')) - coeff * diff);
 				$self.css('top', top + 'px');
 			});

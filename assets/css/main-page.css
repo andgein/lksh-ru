@@ -74,7 +74,7 @@
 
 /* Sponsors */
 .sponsors {
-	margin: 20px 0 20px;
+	margin: -50px 0 20px;
 	text-align: center;
 }
 
@@ -121,6 +121,7 @@
 .portraits {
 	height: 700px;
 	position: relative;
+	top: -80px;
 }
 
 .portrait {

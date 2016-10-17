@@ -94,7 +94,7 @@ h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 800;
-  margin-top: 50px;
+  margin-top: 102px;
 }
 
 h3 {
@@ -247,6 +247,17 @@ p + p {
   .md-ml70 { margin-left: 70px !important; }
   .md-ml80 { margin-left: 80px !important; }
   .md-ml90 { margin-left: 90px !important; }
+
+  .md-mtn  { margin-top: 0 !important; }
+  .md-mt10 { margin-top: 10px !important; }
+  .md-mt20 { margin-top: 20px !important; }
+  .md-mt30 { margin-top: 30px !important; }
+  .md-mt40 { margin-top: 40px !important; }
+  .md-mt50 { margin-top: 50px !important; }
+  .md-mt60 { margin-top: 60px !important; }
+  .md-mt70 { margin-top: 70px !important; }
+  .md-mt80 { margin-top: 80px !important; }
+  .md-mt90 { margin-top: 90px !important; }
 
   .md-visible { display: block; }
   .md-hidden { display: none; }

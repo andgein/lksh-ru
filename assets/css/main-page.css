@@ -54,6 +54,10 @@
 	margin: 10px 0 18px;
 }
 
+.school-announce .description p {
+	line-height: 1.1em;
+}
+
 .school-announce.red .dates {
 	border-color: rgba(188, 58, 23, 0.2);
 }
@@ -129,7 +133,7 @@
 .portrait:nth-child(3) { left: 440px; top: 200px; }
 .portrait:nth-child(4) { left: 140px; top: 290px; } 
 .portrait:nth-child(5) { left: 470px; top: 50px; }
-.portrait:nth-child(6) { left: 280px; top: 310px; }
+.portrait:nth-child(6) { left: 280px; top: 330px; }
 .portrait:nth-child(7) { left: 600px; top: 120px; }
 .portrait:nth-child(8) { left: 110px; top: 490px; }
 
@@ -198,7 +202,7 @@
 .portrait.with-cite .about {
     font-size: 15px;
     line-height: 18px;
-    margin: 5px 0 10px;
+    margin: 5px 0 7px;
     font-weight: 800;
 }
 

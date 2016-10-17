@@ -128,13 +128,13 @@ p + p {
   display: inline-block;
   font-size: 19px;
   position: relative;
-  box-shadow: 5px 5px 0 rgba(196, 162, 157, 1);
+  box-shadow: 5px 5px 0 rgba(171, 141, 137, 1);
   border: 0;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #d14524;
+  background: #ff3600;
   border: 0;
 }
 
@@ -276,7 +276,7 @@ p + p {
 .fw500 { font-weight: 500; }
 .fs13 { font-size: 13px; }
 .fs14 { font-size: 15px; line-height: 18px;}
-.fs15 { font-size: 15px; }
+.fs15 { font-size: 15px; line-height: 18px;}
 .fs16 { font-size: 16px; }
 .fs17 { font-size: 17px; }
 

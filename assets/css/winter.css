@@ -39,7 +39,7 @@ a:not(.button):hover {
 .parallels .parallels-name .cross-line {
 	width: 1em;
     height: 0.45em;
-    border-bottom: 3px solid #BC3A17;
+    border-bottom: 5px solid #BC3A17;
     -webkit-transform: translateY(10px) translateX(-10px) rotate(45deg);
     -o-transform: translateY(10px) translateX(-10px) rotate(45deg);
     -moz-transform: translateY(10px) translateX(-10px) rotate(45deg);
@@ -98,6 +98,7 @@ a:not(.button):hover {
     font-size: 80px;
     font-weight: 100;    
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin-bottom:  5px;
 }
 
 .price:first-letter {

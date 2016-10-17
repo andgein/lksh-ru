@@ -2,27 +2,6 @@
 	background-image: url('../../images/winter/header.jpg');
 }
 
-a {
-	color: #BC3A17;
-	border-color: rgba(188, 58, 23, 0.2);
-}
-
-a:hover,
-a:focus,
-a:active {
-	border-bottom-color: rgba(255, 54, 0, 0.2);
-}
-
-a:not(.button):hover {
-    color: #ed3200;
-}
-
-footer a:hover,
-footer a:focus,
-footer a:active {
-  border-bottom-color: rgba(255, 54, 0, 0.2);
-}
-
 .winter-announce {
 	font-size: 25px;
 	font-weight: 500;
@@ -140,6 +119,11 @@ footer a:active {
 
 .stuff .prohibited p {
 	color: #BC3A17;
+}
+
+.stuff img {
+	width: 100px;
+	height: auto;
 }
 /* End of stuff */
 

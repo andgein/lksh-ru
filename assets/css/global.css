@@ -121,7 +121,7 @@ p + p {
   margin-top: 12px;
 }
 
-a.button {
+.button {
   background: #bc3a17 !important;
   color: #fff !important;
   padding: 14px 24px;
@@ -133,24 +133,19 @@ a.button {
   cursor: pointer;
 }
 
-a.button:hover {
+.button:hover {
   background: #ed3200 !important;
   box-shadow: 5px 5px 0 rgba(156, 128, 125, 1);
   border: 0;
 }
 
-a.button:active {
+.button:active {
   top: 3px;
   left: 3px;
   box-shadow: 1px 1px 0 rgba(119, 94, 93, 1);
+  border: 0;
 }
 
-
-/*
-.content {
-  padding: 40px;
-}
-*/
 
 .mtn  { margin-top: 0px !important;  }
 .mt5  { margin-top: 5px !important;  }
@@ -303,10 +298,21 @@ a:hover,
 a:focus,
 a:active {
   text-decoration: none;  
-  border-bottom: 1px solid rgba(58, 191, 136, 0.2);
 }
 
-a:not(.not-text-link) {
+a {
+  color: #BC3A17;
+  border-bottom: 1px solid rgba(188, 58, 23, 0.2);
+}
+
+a:hover,
+a:focus,
+a:active {
+  border-bottom-color: rgba(255, 54, 0, 0.2);
+}
+
+a:not(.button):hover {
+  color: #ed3200;
 }
 
 a.not-text-link div {
@@ -316,6 +322,13 @@ a.not-text-link div {
 footer a {
   color: #000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  color: #ed3200;
+  border-bottom-color: rgba(255, 54, 0, 0.2);
 }
 
 .header {
@@ -436,11 +449,14 @@ footer a {
   padding: 2px 7px 7px;
 }
 
-.header__last-news .line span:hover {
+.header__last-news:hover .line span {
   background-color: #ed3200;
 }
 
-.header__last-news a {
+.header__last-news a,
+.header__last-news a:hover,
+.header__last-news a:active,
+.header__last-news a:focus {
   color: inherit;
   border-color: rgba(255, 255, 255, 0.3);
 }
@@ -540,7 +556,16 @@ footer a {
 .header__links a {
   /* margin-left: 30px; */
   margin-left: 7px;
-  border-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.3);
+}
+
+.header__links a:hover,
+.header__links a:focus,
+.header__links a:active,
+.white .header__links a:hover,
+.white .header__links a:focus,
+.white .header__links a:active {
+  border-bottom-color: rgba(255, 54, 0, 0.2);
 }
 
 .header__links a.active {
@@ -552,7 +577,7 @@ footer a {
 }
 
 .white .header__links a {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
 .white .header__links a.active {
@@ -582,6 +607,7 @@ footer a {
   width: 30px;
   height: 30px;
   background-image: url('../../images/user-black.png');
+  background-size: 100%;
 }
 
 .header__profile a:hover {

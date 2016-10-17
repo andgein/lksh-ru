@@ -28,7 +28,7 @@
 	color: #739300;
 }
 
-.school-announces a.not-text-link span:not(.title) {
+.school-announces a.not-text-link span:not(.title):not(.button) {
 	display: block;
 }
 
@@ -39,6 +39,19 @@
 
 .school-announces a.not-text-link:hover .title {
 	background-color: #ed3200;
+}
+
+.school-announces a.not-text-link:hover .button {
+	background: #ed3200 !important;
+	box-shadow: 5px 5px 0 rgba(156, 128, 125, 1);
+	border: 0;
+}
+
+.school-announces a.not-text-link:active .button {
+  top: 3px;
+  left: 3px;
+  box-shadow: 1px 1px 0 rgba(119, 94, 93, 1);
+  border: 0;
 }
 
 .school-announce .title {
@@ -84,16 +97,6 @@
 	border-color: rgba(115, 147, 0, 0.2);
 }
 
-.school-announces .button-holder {
-	height: 50px;
-}
-
-.school-announces a.not-text-link + .button-container {
-	position: relative;
-	top: -90px;
-	left: 20px;
-}
-
 .school-announce .details {
 	float: right;
 	/right: 10px;
@@ -108,17 +111,25 @@
 /* Sponsors */
 .sponsors {
 	margin: -50px 0 20px;
-	text-align: center;
-    display: flex;
-    justify-content: space-between;
+	text-align: center;	
+	display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sponsors img {	
+	height: 75px;
+	width: auto;
 }
 
 .sponsors a {
 	border-width: 0;
 }
 
-.sponsors img {
-	/* margin: 0 12px; */
+@media (max-width: 1100px) {
+	.sponsors img {
+		margin: 0 12px;
+	}
 }
 /* End of sponsors */
 

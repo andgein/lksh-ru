@@ -338,8 +338,35 @@ footer a {
   position: relative;
 }
 
-.header__title {
-  width: 450px;
+@media (min-width: 1500px) {
+  .header.with-background {
+    height: 650px;
+    min-height: 650px;
+  }
+
+  .header > .container {
+    height: 550px;
+  }
+
+  .header__title h1 {
+    font-size: 100px;
+    line-height: 80px;
+  }
+
+  .header__title .cursor {
+    font-size: 65px !important;
+  }
+
+  .header__last-news .line {
+    font-size: 21px !important;
+  }
+
+  .header__last-news .line:nth-child(2) {
+    top: 2px;
+  }
+}
+
+.header__title {  
 }
 
 .header__title .cursor {

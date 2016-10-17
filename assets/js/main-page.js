@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	var PARALLAX_COEFFICIENT = 0.2;
 
+	var $container = $('.portraits')
+	var $portraits = $container.find('.portrait');
+
 	var initParallax = function($elements) {
 		$elements.each(function() {
 			var $self = $(this);
@@ -13,26 +16,27 @@ $(document).ready(function() {
 		});
 	}
 
-	var createPortraitsParallax = function() {
-		var $container = $('.portraits')
-		var $portraits = $container.find('.portrait');
-		initParallax($portraits);
-
+	var parallaxHandler = function () {
 		var containerTop = $container.offset().top;
 		var containerBottom = containerTop + $container.height();
-		$(window).scroll(function () {
-			var scrollTop = $(window).scrollTop();
-			var windowHeight = $(window).height();
-			if (scrollTop >= containerTop - windowHeight && scrollTop <= containerBottom) {
-				var diff = scrollTop - containerTop;
-				$portraits.each(function() {
-					var $self = $(this);
-					var coeff = (5 - $self.data('level')) * PARALLAX_COEFFICIENT;
-					var top = Math.floor(parseInt($self.data('init-top')) - coeff * diff);
-					$self.css('top', top + 'px');
-				});
-			}
-		});
+
+		var scrollTop = $(window).scrollTop();
+		var windowHeight = $(window).height();
+		if (scrollTop >= containerTop - windowHeight && scrollTop <= containerBottom) {
+			var diff = scrollTop - containerTop;
+			$portraits.each(function() {
+				var $self = $(this);
+				var coeff = (5 - $self.data('level')) * PARALLAX_COEFFICIENT;
+				var top = Math.floor(parseInt($self.data('init-top')) - coeff * diff);
+				$self.css('top', top + 'px');
+			});
+		}
+	}
+
+	var createPortraitsParallax = function() {
+		initParallax($portraits);
+		parallaxHandler();
+		$(window).scroll(parallaxHandler);		
 	}
 
 	createPortraitsParallax();

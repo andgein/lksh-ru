@@ -40,5 +40,5 @@ $(document).ready(function() {
 		$(window).scroll(parallaxHandler);		
 	}
 
-	createPortraitsParallax();
+	// createPortraitsParallax();
 });

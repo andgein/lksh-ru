@@ -129,7 +129,8 @@
 }
 */
 .sponsors {
-	margin: -50px 0 20px;
+	/* with parallax: margin: -50px 0 20px */
+	margin: 30px 0 20px;
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
@@ -194,7 +195,7 @@
 .portraits {
 	height: 700px;
 	position: relative;
-	top: -80px;
+	/* top: -80px; */
 }
 
 .portrait {

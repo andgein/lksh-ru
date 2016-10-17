@@ -399,7 +399,7 @@ footer a:active {
   }
 
   .header__last-news .line:nth-child(2) {
-    top: 2px;
+    top: 2px !important;
   }
 }
 
@@ -465,6 +465,7 @@ footer a:active {
   transform: rotate(-3deg);
   position: relative;
   left: 10px;
+  top: -5px;
 }
 
 .header__last-news .line span {
@@ -627,6 +628,7 @@ footer a:active {
 .header__profile {
   position: absolute;
   right: 20px;
+  margin-top: -5px;
 }
 
 .header__profile a {

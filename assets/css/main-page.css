@@ -172,8 +172,7 @@
 	margin-bottom: 15px;
 }
 
-.image-slider .image p {
-	width: 400px;
+.image-slider .image p {	
 }
 
 .image-slider .image .container {
@@ -240,6 +239,14 @@
 	}
 
 	.portrait:nth-child(1) { left: 420px; }
+}
+
+@media (max-width: 940px) {
+	.portrait:nth-child(6) {
+		display: none;
+	}
+
+	.portrait:nth-child(1) { left: 320px; }	
 }
 
 .portrait.large img {

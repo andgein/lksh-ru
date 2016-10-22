@@ -588,7 +588,7 @@ footer a:active {
 .header__links a {
   /* margin-left: 30px; */
   margin-left: 7px;
-  border-bottom-color: rgba(0, 0, 0, 0.3);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
 .header__links a:hover,
@@ -603,9 +603,32 @@ footer a:active {
 .header__links a.active {
   background-color: #BC3A17;
   color: white;
-  padding: 4px 7px;  
+  padding: 4px 7px;
   border-width: 0;
   pointer-events: none;
+}
+
+.header__links a.subactive {
+  background-color: #f8ebe7;
+  color: black;
+  padding: 2px 7px 6px;
+  border-width: 0;
+}
+
+.header__links a.subactive span {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header__links a.subactive:hover,
+.header__links a.subactive:active,
+.header__links a.subactive:focus {
+  color: #ed3200;  
+}
+
+.header__links a.subactive:hover span,
+.header__links a.subactive:active span,
+.header__links a.subactive:focus span {
+  border-bottom-color: rgba(255, 54, 0, 0.2);
 }
 
 .white .header__links a {
@@ -690,3 +713,8 @@ footer a:active {
 */
 .slaquo { margin-left: 0.5em; }
 .hlaquo { margin-left: -0.5em; }
+
+/*
+13<span class="digits-space"></span>000
+*/
+.digits-space { display: inline-block; width: 3px; }

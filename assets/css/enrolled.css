@@ -1,0 +1,36 @@
+.enrolled-list {
+	margin-top: 48px;
+}
+
+.enrolled-group {
+	margin: 24px 0;
+}
+
+.enrolled-group:first-child {
+	margin-top: 0;
+}
+
+.enrolled-person {
+	font-size: 19px;
+	margin: 12px 0;
+	font-weight: 400;
+}
+
+.enrolled-person .parallel {
+	display: inline-block;
+	width: 36px;
+}
+
+.enrolled-person .discount {
+	display: inline-block;
+	margin-left: 12px;
+	color: #BC3A17;
+	font-size: 14px;
+}
+
+.enrolled-list .discount-info {
+	font-size: 14px;
+	color: #BC3A17;
+	margin-top: 12px;
+	line-height: 19px;
+}

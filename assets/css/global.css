@@ -522,9 +522,12 @@ footer a:active {
 }
 
 /* Header top */
-.header__top {
-  height: 100px;
+.header__top {  
   padding-top: 15px;
+}
+
+.header.with-background .header__top {
+  height: 100px;
 }
 
 .header__top .container {

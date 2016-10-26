@@ -229,6 +229,9 @@ p + p {
 .xs-visible { display: block; }
 .xs-hidden { display: none; }
 
+.clear-left { clear: left; }
+.clear-initial { clear: initial; }
+
 @media (max-width: 768px) {
   .only-xs-clear-left {
     clear: left;
@@ -273,6 +276,9 @@ p + p {
 
   .sm-visible { display: block; }
   .sm-hidden { display: none; }
+
+  .sm-clear-left { clear: left; }
+  .sm-clear-initial { clear: initial; }
 }
 
 @media (min-width: 992px) {  
@@ -302,6 +308,9 @@ p + p {
 
   .md-visible { display: block; }
   .md-hidden { display: none; }
+
+  .md-clear-left { clear: left; }
+  .md-clear-initial { clear: initial; }
 }
 
 @media (min-width: 1200px) {

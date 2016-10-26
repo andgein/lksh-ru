@@ -48,6 +48,14 @@ img {
   width: auto\9;
 }
 
+b {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 800;
+}
+
 /* Fix for google map */
 #map img {
   max-width: none;
@@ -94,7 +102,8 @@ h2 {
   font-size: 40px;
   line-height: 44px;
   font-weight: 800;
-  margin-top: 102px;
+  margin-top: 86px;
+  margin-bottom: 24px;
 }
 
 h3 {
@@ -151,6 +160,7 @@ p + p {
 .mt5  { margin-top: 5px !important;  }
 
 .mt10 { margin-top: 10px !important; }
+.mt12 { margin-top: 12px !important; }
 .mt20 { margin-top: 20px !important; }
 .mt26 { margin-top: 26px !important; }
 .mt30 { margin-top: 30px !important; }
@@ -194,6 +204,12 @@ p + p {
 
 .xs-visible { display: block; }
 .xs-hidden { display: none; }
+
+@media (max-width: 768px) {
+  .only-xs-clear-left {
+    clear: left;
+  }
+}
 
 @media (min-width: 768px) {
   .sm-ib { display: inline-block; }
@@ -295,7 +311,10 @@ p + p {
 
 /* Helpers */
 .color-inherit { color: inherit; }
+.ta-left { text-align: left; }
 .ta-center { text-align: center; }
+.ta-right { text-align: right; }
+.ta-justify { text-align: justify; }
 .va-middle { vertical-align: middle; }
 .ib { display: inline-block; }
 .fw200 { font-weight: 200; }
@@ -307,6 +326,9 @@ p + p {
 .fs15 { font-size: 15px; line-height: 18px; }
 .fs16 { font-size: 16px; }
 .fs17 { font-size: 17px; }
+.fs18 { font-size: 18px; }
+.fs19 { font-size: 19px; line-height: 24px; }
+.mw300 { max-width: 300px; }
 .mw400 { max-width: 400px; }
 .mw500 { max-width: 500px; }
 .mw600 { max-width: 600px; }
@@ -404,6 +426,11 @@ footer a:active {
 }
 
 .header__title {  
+}
+
+.header__title.white,
+.header__title.white h1 {
+  color: white;
 }
 
 .header__title .cursor {
@@ -571,10 +598,6 @@ footer a:active {
   }
 }
 
-.header__links a {
-  color: inherit;
-}
-
 .header.with-background .header__logo,
 .header.with-background .header__links {
   color: black;
@@ -591,6 +614,19 @@ footer a:active {
   border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
+.white .header__links a {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.white .header__links a.active {
+  background-color: black;
+}
+
+.white .header__links a,
+.white .header__links a.active {
+  color: white;
+}
+
 .header__links a:hover,
 .header__links a:focus,
 .header__links a:active,
@@ -601,8 +637,8 @@ footer a:active {
 }
 
 .header__links a.active {
-  background-color: #BC3A17;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 4px 7px;
   border-width: 0;
   pointer-events: none;
@@ -630,15 +666,6 @@ footer a:active {
 .header__links a.subactive:focus span {
   border-bottom-color: rgba(255, 54, 0, 0.2);
 }
-
-.white .header__links a {
-  border-bottom-color: rgba(255, 255, 255, 0.2);
-}
-
-.white .header__links a.active {
-  background-color: black;
-}
-
 
 .header__links a.inactive {
   color: rgba(0, 0, 0, 0.3);

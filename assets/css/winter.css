@@ -69,6 +69,7 @@
 	font-weight: 100;
 	border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	letter-spacing: -5px;
+	padding-bottom: 10px;
 }
 
 .special-date .date .month {
@@ -90,6 +91,7 @@
     font-weight: 100;    
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	margin-bottom:  5px;
+	padding-bottom: 15px;
 }
 
 .price:first-letter {
@@ -130,28 +132,3 @@
 	height: auto;
 }
 /* End of stuff */
-
-/* How to get */
-.how-to-get table {
-	margin-top: 12px;
-}
-
-.how-to-get thead tr:first-child th {
-	font-weight: 700;
-}
-
-.how-to-get td,
-.how-to-get th {
-	font-size: 15px;
-	text-align: left;
-	padding: 10px 25px 5px 0;
-}
-
-.how-to-get thead tr:not(:first-child) th {
-	padding-top: 0;
-}
-
-.how-to-get thead tr:last-child {
-	border-bottom: 1px solid rgba(0, 0, 0, 0.5)
-}
-/* End of how to get */

@@ -29,7 +29,7 @@ $(document).ready(function() {
 			var diff = scrollTop - containerTop;
 			$portraits.each(function() {
 				var $self = $(this);
-				var coeff = sqr(5 - $self.data('level')) * PARALLAX_COEFFICIENT / 2;
+				var coeff = (2 - $self.data('level')) * PARALLAX_COEFFICIENT;
 				var top = Math.floor(parseInt($self.data('init-top')) - coeff * diff);
 				$self.css('top', top + 'px');
 			});
@@ -42,7 +42,7 @@ $(document).ready(function() {
 		$(window).scroll(parallaxHandler);		
 	}
 
-	// createPortraitsParallax();
+	createPortraitsParallax();
 });
 
 /* Subscribe form */

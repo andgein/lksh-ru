@@ -682,3 +682,16 @@
     width: 1070px;
   }
 }
+
+.wide-container {
+  width: 100%;
+  min-width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .wide-container {
+    width: 1440px;
+    min-width: initial;
+    margin: auto;
+  }
+}

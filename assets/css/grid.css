@@ -688,7 +688,7 @@
   min-width: 100%;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1460px) {
   .wide-container {
     width: 1440px;
     min-width: initial;

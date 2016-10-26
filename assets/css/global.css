@@ -153,16 +153,16 @@ p + p {
 .button.red {
   background: #bc3a17 !important;
   color: #fff !important;
-  box-shadow: 5px 5px 0 rgba(171, 141, 137, 1);
+  box-shadow: 5px 5px 0 #D0B8B5;
 }
 
 .button.red:hover {
   background: #ed3200 !important;
-  box-shadow: 5px 5px 0 rgba(156, 128, 125, 1);
+  box-shadow: 5px 5px 0 #C1ACAA;
 }
 
 .button.red:active {
-  box-shadow: 1px 1px 0 rgba(119, 94, 93, 1);
+  box-shadow: 1px 1px 0 #775E5D;
 }
 
 .button.green {

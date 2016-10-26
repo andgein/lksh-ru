@@ -1,3 +1,5 @@
+/* Parallax */
+
 var sqr = function(x) { return x * x; }
 
 $(document).ready(function() {
@@ -41,4 +43,41 @@ $(document).ready(function() {
 	}
 
 	// createPortraitsParallax();
+});
+
+/* Subscribe form */
+
+$(document).ready(function(){
+	var $form = $('.subscribe-form');
+	var $description = $form.closest('.school-announce').find('.description');
+	var $emailInput = $form.find('input[type="text"]');
+
+	var subscribe = function (e) {
+		if (e)
+			e.preventDefault();
+
+		var email = $emailInput.val();
+		$emailInput.removeClass('invalid');
+		if (email == '') {
+			$emailInput.addClass('invalid');
+			return false;
+		}
+
+		$.post('/subscribe.php', {
+			email: email
+		}).done(function(data) {
+
+		}).always(function() {
+
+		});
+
+		return false;
+	}
+
+	$form.find('a.button').click(subscribe);
+	$emailInput.keyup(function (e) {
+		/* If Enter */
+		if (e.keyCode == 13)
+			subscribe();
+	});
 });

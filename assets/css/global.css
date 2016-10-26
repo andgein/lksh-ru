@@ -171,11 +171,12 @@ p + p {
 }
 
 .button.green:hover {
-
+  background: #99C200 !important;
+  box-shadow: 5px 5px 0 #AFB3A0;
 }
 
 .button.green:active {
-  box-shadow: 1px 1px 0 rgba(119, 94, 93, 1);
+  box-shadow: 1px 1px 0 #5F6157;
 }
 
 

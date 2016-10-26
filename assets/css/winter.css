@@ -131,4 +131,8 @@
 	width: 100px;
 	height: auto;
 }
+
+.stuff img.wide {
+	width: 116px;
+}
 /* End of stuff */

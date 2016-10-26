@@ -284,3 +284,28 @@
     line-height: 21px;
 }
 /* End of portraits */
+
+/* Subscribe form */
+.subscribe-form {
+
+}
+
+.subscribe-form input[type="text"] {
+    height: 47px;
+    padding: 10px 15px;
+    font-size: 19px;
+    border: 1px solid #c4d294;
+    color: #739300;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.subscribe-form input[type="text"]::-webkit-input-placeholder {	color: #c4d294 !important; }
+.subscribe-form input[type="text"]:-moz-placeholder 		  { color: #c4d294 !important; }
+.subscribe-form input[type="text"]:-ms-input-placeholder 	  {	color: #c4d294 !important; }
+.subscribe-form input[type="text"]::placeholder 			  {	color: #c4d294 !important; }
+
+.subscribe-form.button {
+	top: 1px;
+}
+/* End of subscribe form */

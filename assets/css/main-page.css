@@ -120,6 +120,17 @@
 .sponsors a:last-child {
 	margin-right: 0;
 }
+
+@media (max-width: 767px) {
+	.sponsors {
+		margin: 0;
+		margin-bottom: 40px;
+	}
+
+	.sponsors a {
+		min-height: 40px;
+	}
+}
 /*
 @media (max-width: 1100px) {
 	.sponsors img {
@@ -298,6 +309,7 @@
     color: #739300;
     background-color: transparent;
     margin-right: 10px;
+    -webkit-appearance: none;
 }
 
 .subscribe-form input[type="text"]::-webkit-input-placeholder {	color: #c4d294 !important; }

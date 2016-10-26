@@ -334,6 +334,7 @@ p + p {
 }
 
 /* Helpers */
+.hidden { display: none; }
 .color-inherit { color: inherit; }
 .background-top { background-position-y: top !important; }
 .ta-left { text-align: left; }

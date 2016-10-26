@@ -308,4 +308,16 @@
 .subscribe-form.button {
 	top: 1px;
 }
+
+.school-announce .another-email-link {
+	color: #739300;
+	border-bottom-color: rgba(115, 147, 0, 0.2);
+}
+
+.school-announce .another-email-link:hover,
+.school-announce .another-email-link:active,
+.school-announce .another-email-link:focus {
+	color: #99c200;
+	border-bottom-color: rgba(153, 194, 0, 0.2);
+}
 /* End of subscribe form */

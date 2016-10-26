@@ -50,7 +50,10 @@ $(document).ready(function() {
 $(document).ready(function(){
 	var $form = $('.subscribe-form');
 	var $description = $form.closest('.school-announce').find('.description');
-	var $emailInput = $form.find('input[type="text"]');
+	var $anotherEmailLink = $form.closest('.school-announce').find('.another-email-link');
+	var $emailInput = $form.find('input[type="text"]');	
+	var hasLocalStorage = 'localStorage' in window && window['localStorage'] !== null;
+	var localStorageKey = 'subscribe_email';
 
 	var subscribe = function (e) {
 		if (e)
@@ -66,12 +69,29 @@ $(document).ready(function(){
 		$.post('/subscribe.php', {
 			email: email
 		}).done(function(data) {
-
+			set_subscription_email(email);
 		}).always(function() {
-
 		});
 
 		return false;
+	}
+
+	var set_subscription_email = function (email) {
+		$description.find('.colon').hide();
+		$description.find('.email').html('на&nbsp;<span></span>').show().find('span').text(email);
+
+		$anotherEmailLink.show();
+		$form.hide();
+
+		if (hasLocalStorage)
+			localStorage[localStorageKey] = email;
+	}
+
+	var show_subscribe_form = function (e) {
+		e.preventDefault();
+
+		$form.show();
+		$anotherEmailLink.hide();
 	}
 
 	$form.find('a.button').click(subscribe);
@@ -80,4 +100,8 @@ $(document).ready(function(){
 		if (e.keyCode == 13)
 			subscribe();
 	});
+
+	$anotherEmailLink.click(show_subscribe_form);
+	if (hasLocalStorage && localStorage[localStorageKey])
+		set_subscription_email(localStorage[localStorageKey]);
 });

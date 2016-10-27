@@ -384,6 +384,9 @@ p + p {
 .mw400 { max-width: 400px; }
 .mw500 { max-width: 500px; }
 .mw600 { max-width: 600px; }
+.mw700 { max-width: 700px; }
+.mw800 { max-width: 800px; }
+.mw900 { max-width: 900px; }
 
 footer {
   padding: 70px 0 40px;
@@ -659,7 +662,6 @@ footer a:active {
 .header__links a {
   /* margin-left: 30px; */
   margin-left: 7px;
-  border-bottom-color: rgba(0, 0, 0, 0.2);
 }
 
 .white .header__links a {

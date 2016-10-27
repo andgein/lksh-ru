@@ -69,14 +69,14 @@ $(document).ready(function(){
 		$.post('/subscribe.php', {
 			email: email
 		}).done(function(data) {
-			set_subscription_email(email);
+			setSubscriptionEmail(email);
 		}).always(function() {
 		});
 
 		return false;
 	}
 
-	var set_subscription_email = function (email) {
+	var setSubscriptionEmail = function (email) {
 		$description.find('.colon').hide();
 		$description.find('.email').html('на&nbsp;<span></span>').show().find('span').text(email);
 
@@ -87,7 +87,7 @@ $(document).ready(function(){
 			localStorage[localStorageKey] = email;
 	}
 
-	var show_subscribe_form = function (e) {
+	var showSubscribeForm = function (e) {
 		e.preventDefault();
 
 		$form.show();
@@ -101,7 +101,7 @@ $(document).ready(function(){
 			subscribe();
 	});
 
-	$anotherEmailLink.click(show_subscribe_form);
+	$anotherEmailLink.click(showSubscribeForm);
 	if (hasLocalStorage && localStorage[localStorageKey])
-		set_subscription_email(localStorage[localStorageKey]);
+		setSubscriptionEmail(localStorage[localStorageKey]);
 });

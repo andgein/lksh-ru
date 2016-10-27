@@ -121,7 +121,7 @@
 
 .price {
     font-size: 80px;
-    font-weight: 100;    
+    font-weight: 100; 
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 	margin-bottom:  5px;
 	padding-bottom: 15px;
@@ -168,3 +168,44 @@
 	width: 116px;
 }
 /* End of stuff */
+
+/* Trains */
+.trains {
+	margin-top: 12px;
+}
+
+.trains .train {
+	background-color: #F2F2F2; 
+    margin: 0 -5px 0 -10px;
+    padding: 0 10px 30px;
+}
+
+.trains .train .title {
+	display: inline-block;
+    background-color: black; 
+    color: white;
+    padding: 3px 7px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.trains .train .info {
+	margin: 12px 0;
+}
+
+.trains .train .number {
+    font-size: 50px;
+    font-weight: 100;
+    display: inline-block;
+}
+
+.trains .train .time {
+	display: inline-block;
+	font-size: 19px;
+	margin-left: 12px;
+}
+
+.trains .train .description p {
+	line-height: 20px;
+}
+/* End of trains */

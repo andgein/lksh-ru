@@ -779,6 +779,28 @@ footer a:active {
 }
 /* End of description-black */
 
+/* Important news */
+.important-news {
+  background-color: #FFF6EB;
+  padding: 16px 80px;
+  margin: 24px 0;
+  position: relative;
+}
+
+.important-news > img {
+  position: absolute;
+  bottom: 0;
+  left: 25px;
+  width: 40px;
+}
+
+.important-news .time {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #BB3A17;
+}
+/* End of important news */
+
 .caps {
   letter-spacing: 0.05em;
 }

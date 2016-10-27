@@ -108,7 +108,7 @@ h2 {
   line-height: 44px;
   font-weight: 800;
   margin-top: 86px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
 }
 
 h3 {
@@ -201,6 +201,7 @@ p + p {
 .mtn  { margin-top: 0px !important;  }
 .mt5  { margin-top: 5px !important;  }
 
+.mt6 { margin-top: 6px !important; }
 .mt10 { margin-top: 10px !important; }
 .mt12 { margin-top: 12px !important; }
 .mt20 { margin-top: 20px !important; }
@@ -214,6 +215,7 @@ p + p {
 .mt80 { margin-top: 80px !important; }
 .mt90 { margin-top: 90px !important; }
 
+.mbn  { margin-bottom: 0px !important; }
 .mb10 { margin-bottom: 10px !important; }
 .mb20 { margin-bottom: 20px !important; }
 .mb30 { margin-bottom: 30px !important; }
@@ -487,6 +489,12 @@ footer a:active {
   }
 }
 
+@media (max-width: 767px) {
+  .header__title .cursor {
+    font-size: 35px !important;
+  }
+}
+
 .header__title {  
 }
 
@@ -626,6 +634,17 @@ footer a:active {
 .header__top .container > div {
   display: inline-block;
 }
+
+.header.with-background .header__top.white.loaded {
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#331f20+0,000000+100&1+0,0+100 */
+   background: -moz-linear-gradient(top,  rgba(51,31,32,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(51,31,32,1)), color-stop(100%,rgba(0,0,0,0))); /* hrome4-9,Safari4-5 */
+   background: -webkit-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+   background: -o-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* Opera 11.10-11.50 */
+   background: -ms-linear-gradient(top,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* IE10 preview */
+   background: linear-gradient(to bottom,  rgba(51,31,32,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#331f20', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+ }
 
 .header__logo {
   font-weight: 800;
@@ -802,6 +821,10 @@ footer a:active {
   color: #BB3A17;
 }
 /* End of important news */
+
+.email-rules {
+  font-size: 12px;
+}
 
 .caps {
   letter-spacing: 0.05em;

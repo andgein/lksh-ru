@@ -204,16 +204,19 @@
 
 .portrait:nth-child(9) { left: 750px; top: 90px; }
 .portrait:nth-child(10) { left: 850px; top: 70px; }
-.portrait:nth-child(11) { left: 30px; top: 200px; }
+.portrait:nth-child(11) { left: 210px; top: 430px; }
 .portrait:nth-child(12) { left: 700px; top: 20px; }
 .portrait:nth-child(13) { left: 330px; top: 210px; }
 .portrait:nth-child(14) { left: 390px; top: 365px; }
 .portrait:nth-child(15) { left: 20px; top: 400px; }
 .portrait:nth-child(16) { left: 620px; top: 250px; }
 .portrait:nth-child(17) { left: 820px; top: 210px; }
-.portrait:nth-child(18) { left: 210px; top: 430px; }
-.portrait:nth-child(19) { left: 400px; top: 520px; }
-.portrait:nth-child(20) { left: 390px; top: 30px; }
+.portrait:nth-child(18) { left: 400px; top: 520px; }
+.portrait:nth-child(19) { left: 390px; top: 30px; }
+
+.portrait.with-cite:nth-child(2) .cite {
+	top: 0;
+}
 
 @media (max-width: 1100px) {
 	.portrait:nth-child(9),

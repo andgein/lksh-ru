@@ -2,10 +2,22 @@
 	background-image: url('../../images/winter/header.jpg');
 }
 
-.winter-announce {
-	font-size: 25px;
-	font-weight: 500;
-	margin-top: 70px;	
+.winter-details + .winter-details {
+	margin-top: 20px;
+}
+
+.winter-details > * {
+	display: inline-block;
+}
+
+.winter-details img {
+	width: 115px;
+	margin-right: 10px;
+}
+
+.winter-details p {
+	vertical-align: top;
+	max-width: 250px;
 }
 
 .apostrophe {
@@ -152,7 +164,7 @@
 
 .stuff .prohibited {
 	position: relative;
-	top: -2.4em;
+	top: -1.7em;
 }
 
 .stuff .prohibited p {

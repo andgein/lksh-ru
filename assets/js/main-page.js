@@ -3,7 +3,7 @@
 var sqr = function(x) { return x * x; }
 
 $(document).ready(function() {
-	var PARALLAX_COEFFICIENT = 0.1;
+	var PARALLAX_COEFFICIENT = 0.15;
 
 	var $container = $('.portraits')
 	var $portraits = $container.find('.portrait');
@@ -16,6 +16,11 @@ $(document).ready(function() {
 			for (var level = 1; level <= 4; level++)
 				if ($self.hasClass('level-' + level))
 					$self.data('level', level)
+		});
+
+		$elements.find('.cite').each(function() {
+			var $self = $(this);
+			$self.data('init-top', $self.css('top'));
 		});
 	}
 
@@ -31,6 +36,11 @@ $(document).ready(function() {
 				var $self = $(this);
 				var coeff = (2 - $self.data('level')) * PARALLAX_COEFFICIENT;
 				var top = Math.floor(parseInt($self.data('init-top')) - coeff * diff);
+				$self.css('top', top + 'px');
+			});
+			$portraits.find('.cite').each(function(){
+				var $self = $(this);
+				var top = Math.floor(parseInt($self.data('init-top')) - 0.1 * diff);
 				$self.css('top', top + 'px');
 			});
 		}
@@ -104,4 +114,10 @@ $(document).ready(function(){
 	$anotherEmailLink.click(showSubscribeForm);
 	if (hasLocalStorage && localStorage[localStorageKey])
 		setSubscriptionEmail(localStorage[localStorageKey]);
+
+	/* Mark header image as loaded */
+	$('<img/>').attr('src', 'images/main/header.jpg').on('load', function() {
+	   $(this).remove();
+	   $('.header__top').addClass('loaded');
+	});
 });

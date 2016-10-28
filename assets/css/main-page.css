@@ -215,7 +215,7 @@
 .portrait:nth-child(19) { left: 390px; top: 30px; }
 
 .portrait.with-cite:nth-child(2) .cite {
-	top: 0;
+	top: -30px;
 }
 
 @media (max-width: 1100px) {

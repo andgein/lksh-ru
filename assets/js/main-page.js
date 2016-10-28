@@ -90,7 +90,7 @@ $(document).ready(function(){
 		$description.find('.colon').hide();
 		$description.find('.email').html('на&nbsp;<span></span>').show().find('span').text(email);
 
-		$anotherEmailLink.show();
+		$anotherEmailLink.css('display', 'inline-block');
 		$form.hide();
 
 		if (hasLocalStorage)

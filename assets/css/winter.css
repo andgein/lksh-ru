@@ -35,13 +35,6 @@
 	margin-top: 20px;
 }
 
-@media (max-width: 767px) {
-	.parallels .parallels-name {
-		font-size: 80px;
-		line-height: 70px;
-	}
-}
-
 .parallels .parallels-name .apostrophe {
 	left: -0.2em;
 }
@@ -57,23 +50,8 @@
     position: absolute;
 }
 
-@media (max-width: 767px) { 
-	.parallels .parallels-name .cross-line {
-		-webkit-transform: translateY(10px) translateX(-5px) rotate(45deg);
-	    -o-transform: translateY(10px) translateX(-5px) rotate(45deg);
-	    -moz-transform: translateY(10px) translateX(-5px) rotate(45deg);
-	    transform: translateY(10px) translateX(-5px) rotate(45deg);
-	}
-}
-
 .parallels .parallels-name.shift-left:first-letter {
 	margin-left: -10px;
-}
-
-@media (max-width: 767px) {
-	.parallels .parallels-name.shift-left:first-letter {
-		margin-left: -5px;
-	}
 }
 
 .parallels .parallels-name sup {

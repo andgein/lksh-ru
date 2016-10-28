@@ -227,6 +227,7 @@ p + p {
 .mb90 { margin-bottom: 90px !important; }
 
 .mln15 { margin-left: -15px !important; }
+.mln3 { margin-left: -3px !important; }
 .ml10 { margin-left: 10px !important; }
 .ml20 { margin-left: 20px !important; }
 .ml30 { margin-left: 30px !important; }
@@ -681,9 +682,15 @@ footer a:active {
 .header__links a {
   /* margin-left: 30px; */
   margin-left: 7px;
+  padding: 4px 7px;
+  border-bottom-width: 0;
 }
 
-.white .header__links a {
+.header__links a span {
+  border-bottom: 1px solid rgba(188, 58, 23, 0.2);
+}
+
+.white .header__links a span {
   border-bottom-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -696,22 +703,25 @@ footer a:active {
   color: white;
 }
 
-.header__links a:hover,
-.header__links a:focus,
-.header__links a:active,
-.white .header__links a:hover,
-.white .header__links a:focus,
-.white .header__links a:active {
+.header__links a:hover span,
+.header__links a:focus span,
+.header__links a:active span,
+.white .header__links a:hover span,
+.white .header__links a:focus span,
+.white .header__links a:active span {
   border-bottom-color: rgba(255, 54, 0, 0.2);
   color: #ed3200;
 }
 
 .header__links a.active {
   background-color: white;
-  color: black;
-  padding: 4px 7px;
+  color: black;  
   border-width: 0;
   pointer-events: none;
+}
+
+.header__links a.active span {
+  border-bottom-width: 0;
 }
 
 .header__links a.subactive {

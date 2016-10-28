@@ -313,6 +313,7 @@
     background-color: transparent;
     margin-right: 10px;
     -webkit-appearance: none;
+    max-width: 200px;
 }
 
 .subscribe-form input[type="text"]::-webkit-input-placeholder {	color: #c4d294 !important; }

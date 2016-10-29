@@ -1,13 +1,13 @@
 .enrolled-list {
-	margin-top: 48px;
+	
 }
 
 .enrolled-group {
 	margin: 24px 0;
 }
 
-.enrolled-group:first-child {
-	margin-top: 0;
+p + .enrolled-group {
+	margin-top: 36px;
 }
 
 .enrolled-person {

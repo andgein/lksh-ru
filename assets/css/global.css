@@ -851,3 +851,8 @@ footer a:active {
 13<span class="digits-space"></span>000
 */
 .digits-space { display: inline-block; width: 3px; }
+
+/*
+<a href="">список зачисленных</a><span class="link-dot">.</span>
+*/
+.link-dot { color: #BC3A17; }

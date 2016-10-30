@@ -35,3 +35,40 @@ p + .enrolled-group {
 	margin-top: 12px;
 	line-height: 19px;
 }
+
+.enrolled-list-switchers {
+	margin-top: 20px;
+}
+
+.enrolled-list-switcher {
+	display: inline-block;
+	border-bottom: 0px;
+	font-size: 18px;	
+	color: black;	
+}
+
+.enrolled-list-switcher + .enrolled-list-switcher {
+	margin-top: 3px;
+}
+
+.enrolled-list-switcher + .enrolled-list-switcher:not(.active) {
+	margin-top: 6px;
+}
+
+.enrolled-list-switcher.active {
+	background-color: rgba(188, 58, 23, 0.1);
+	padding: 5px 9px;
+	pointer-events: none;
+}
+
+.enrolled-list-switcher:not(.active) {
+	/*
+	background-image: linear-gradient(to right, #ccc 60%, rgba(255, 255, 255, 0) 0%);
+  	background-position: bottom;
+  	background-size: 15px 1px;
+  	background-repeat: repeat-x;
+  	*/
+  	border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
+  	margin: 2px 9px;
+  	padding: 3px 0px;
+}

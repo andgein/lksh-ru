@@ -316,6 +316,7 @@ p + p {
   .md-ml90 { margin-left: 90px !important; }
 
   .md-mtn  { margin-top: 0 !important; }
+  .md-mt5  { margin-top: 5px !important; }
   .md-mt10 { margin-top: 10px !important; }
   .md-mt20 { margin-top: 20px !important; }
   .md-mt30 { margin-top: 30px !important; }
@@ -424,6 +425,10 @@ a:active {
 
 a:not(.button):hover {
   color: #ed3200;
+}
+
+a.not-text-link {
+  border-bottom-width: 0px;
 }
 
 a.not-text-link div {

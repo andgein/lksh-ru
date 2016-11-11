@@ -1,12 +1,16 @@
 $(function() {
     $.fn.smoothScroll = function (callback) {
         var $object = this;
+        var callbackOnlyForBody = function () {
+            if (callback && $(this)[0].tagName.toLowerCase() == 'body')
+                callback();
+        }
         if ($object.length) {
-            $('body').animate({
+            $('body,html').animate({
                 scrollTop: $object.offset().top
             }, {
                 duration: 1000,
-                complete: callback
+                complete: callbackOnlyForBody
             }); 
             return true;
         } 

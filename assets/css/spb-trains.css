@@ -52,7 +52,8 @@
 .train-ticket .train-info .carriage,
 .train-ticket .train-info .seat,
 .train-ticket .train-info .price {
-	width: 30%;
+	/width: 30%;
+	width: 65px;
 }
 
 .train-ticket:last-child .train-info {

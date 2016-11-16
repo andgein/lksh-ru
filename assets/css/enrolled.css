@@ -37,7 +37,6 @@ p + .enrolled-group {
 }
 
 .enrolled-list-switchers {
-	margin-top: 20px;
 }
 
 .enrolled-list-switcher {
@@ -71,4 +70,8 @@ p + .enrolled-group {
   	border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   	margin: 2px 9px;
   	padding: 3px 0px;
+}
+
+h2 + .by-name {
+	margin-top: -10px;
 }

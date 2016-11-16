@@ -1,0 +1,60 @@
+.train-ticket {
+	font-size: 19px;
+}
+
+@media (max-width: 1024px) {
+	.train-ticket {
+		font-size: 16px;
+	}
+}
+
+.train-ticket.ticket-header {
+	font-weight: 900;
+}
+
+.train-ticket .name {
+	height: 19px;
+	overflow-y: hidden;
+	text-overflow: ellipsis;
+}
+
+@media (max-width: 1024px) {
+	.train-ticket .name {
+		height: 16px;
+	}
+}
+
+.train-ticket .train-info {
+	margin: 0 -5px 0 -10px;
+  	padding: 0 10px 15px 20px;
+  	background-color: #F2F2F2; 
+}
+
+.train-ticket.ticket-header .train-info,
+.train-ticket.ticket-header > div:first-child {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.trains + .train-ticket.ticket-header .train-info,
+.trains + .train-ticket.ticket-header > div:first-child {
+	padding-top: 0;
+}
+
+.train-ticket .train-info > div {
+	display: inline-block;
+}
+
+.train-ticket .train-info .status {
+	width: 40%;
+}
+
+.train-ticket .train-info .carriage,
+.train-ticket .train-info .seat,
+.train-ticket .train-info .price {
+	width: 30%;
+}
+
+.train-ticket:last-child .train-info {
+	padding-bottom: 40px;
+}

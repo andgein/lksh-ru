@@ -689,10 +689,11 @@ footer a:active {
   margin-left: 7px;
   padding: 4px 7px;
   border-bottom-width: 0;
+  color: black;  
 }
 
 .header__links a span {
-  border-bottom: 1px solid rgba(188, 58, 23, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .white .header__links a span {
@@ -836,6 +837,71 @@ footer a:active {
   color: #BB3A17;
 }
 /* End of important news */
+
+/* Trains */
+.trains {
+  margin-top: 12px;
+}
+
+.trains .train {
+  background-color: #F2F2F2; 
+  margin: 0 -5px 0 -10px;
+  padding: 0 10px 40px 20px;
+}
+
+.trains .train .title {
+  display: inline-block;
+  background-color: black; 
+  color: white;
+  padding: 3px 7px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trains .train .datetime,
+.trains .train .info {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 19px;
+  margin: 12px 0;
+}
+
+.trains .train .info {
+  margin-left: 12px;
+  padding-top: 4px;
+}
+
+@media (max-width: 1200px) {
+  .trains .train .datetime {
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .trains .train .info {
+    margin: 0;
+  }
+}
+
+.trains .train .info > div {
+  margin: 4px 0 2px;
+}
+
+.trains .train .time {
+  font-size: 54px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.trains .train .description {  
+  margin-top: 0px;
+  padding-top: 8px;
+  margin-right: 10px
+}
+
+.trains .train .description p {
+  line-height: 20px;
+}
+/* End of trains */
 
 .email-rules {
   font-size: 12px;

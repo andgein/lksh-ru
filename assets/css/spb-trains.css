@@ -52,8 +52,19 @@
 .train-ticket .train-info .carriage,
 .train-ticket .train-info .seat,
 .train-ticket .train-info .price {
-	/width: 30%;
 	width: 65px;
+}
+
+@media (max-width: 1024px) {
+	.train-ticket .train-info .carriage,
+	.train-ticket .train-info .seat,
+	.train-ticket .train-info .price {
+		width: 50px;
+	}	
+}
+
+.train-ticket .train-info .price {
+	text-align: right;
 }
 
 .train-ticket:last-child .train-info {

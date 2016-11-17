@@ -391,6 +391,13 @@ p + p {
 .mw700 { max-width: 700px; }
 .mw800 { max-width: 800px; }
 .mw900 { max-width: 900px; }
+.minw300 { min-width: 300px; }
+.minw400 { min-width: 400px; }
+.minw500 { min-width: 500px; }
+.minw600 { min-width: 600px; }
+.minw700 { min-width: 700px; }
+.minw800 { min-width: 800px; }
+.minw900 { min-width: 900px; }
 
 footer {
   padding: 70px 0 40px;

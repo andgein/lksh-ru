@@ -32,8 +32,9 @@ p + .enrolled-group {
 .enrolled-list .discount-info {
 	font-size: 14px;
 	color: #BC3A17;
-	margin-top: 12px;
+	margin: 36px 0 0 8px;
 	line-height: 19px;
+	max-width: 200px;
 }
 
 .enrolled-list-switchers {
@@ -72,6 +73,7 @@ p + .enrolled-group {
   	padding: 3px 0px;
 }
 
-h2 + .by-name {
+h2 + .by-name,
+h2 + .by-name + .by-parallel {
 	margin-top: -10px;
 }

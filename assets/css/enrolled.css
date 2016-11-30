@@ -23,7 +23,9 @@ p + .enrolled-group {
 }
 
 .enrolled-person .discount {
-	display: inline-block;
+	display: none;
+
+	_display: inline-block;
 	margin-left: 12px;
 	color: #BC3A17;
 	font-size: 14px;

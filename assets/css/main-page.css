@@ -43,6 +43,18 @@
 	background-color: #739300;
 }
 
+.school-announce.green a {
+	color: #739300;
+	border-bottom-color: rgba(115, 147, 0, 0.2);
+}
+
+.school-announce.green a:active,
+.school-announce.green a:focus,
+.school-announce.green a:hover {
+	color: #99c200;
+	border-bottom-color: rgba(153, 194, 0, 0.2);
+}
+
 .school-announce .dates {
     font-size: 40px;
     line-height: 37px;
@@ -301,7 +313,7 @@
 
 /* Subscribe form */
 .subscribe-form {
-
+	
 }
 
 .subscribe-form input[type="text"] {
@@ -337,3 +349,51 @@
 	border-bottom-color: rgba(153, 194, 0, 0.2);
 }
 /* End of subscribe form */
+
+/* School announce */
+.school-announce .school-announce__link {
+	font-size: 15px;
+}
+
+.school-announce .school-announce__link .image {
+	display: inline-block;
+	width: 27px;
+	height: 27px;	
+	background-size: 27px 27px;
+	margin-right: 5px;
+}
+
+.school-announce .school-announce__link .image[data-image="study"] {
+	background-image: url('../../images/main/icons/study.png');
+}
+.school-announce .school-announce__link:hover .image[data-image="study"] {
+	background-image: url('../../images/main/icons/study_hover.png');
+}
+.school-announce .school-announce__link .image[data-image="come"] {
+	background-image: url('../../images/main/icons/come.png');
+}
+.school-announce .school-announce__link:hover .image[data-image="come"] {
+	background-image: url('../../images/main/icons/come_hover.png');
+}
+.school-announce .school-announce__link .image[data-image="payment"] {
+	background-image: url('../../images/main/icons/payment.png');
+}
+.school-announce .school-announce__link:hover .image[data-image="payment"] {
+	background-image: url('../../images/main/icons/payment_hover.png');
+}
+.school-announce .school-announce__link .image[data-image="take"] {
+	background-image: url('../../images/main/icons/take.png');
+}
+.school-announce .school-announce__link:hover .image[data-image="take"] {
+	background-image: url('../../images/main/icons/take_hover.png');
+}
+
+.school-announce .school-announce__link > * {
+	vertical-align: middle;
+}
+
+.school-announce .school-announce__link > .school-announce__link__text {
+	position: relative;
+	top: 2px;
+}
+/* End of school announce */

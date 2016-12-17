@@ -481,6 +481,15 @@ a.not-text-link div {
   color: inherit;
 }
 
+a.not-text-link .not-text-link__text {
+  border-bottom: 1px solid rgba(188, 58, 23, 0.2);
+}
+
+a.not-text-link:hover .not-text-link__text {
+  color: #ed3200;
+  border-bottom: 1px solid rgba(255, 54, 0, 0.2);
+}
+
 footer a {
   color: #000;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -498,8 +507,8 @@ footer a:active {
 }
 
 .header.with-background {
-  height: 540px;
-  min-height: 540px;
+  height: 440px;
+  min-height: 440px;
   background-size: cover;
   background-position: center center;
 }
@@ -509,9 +518,32 @@ footer a:active {
 }
 
 .header > .container {
-  height: 440px;
+  height: 348px;
   position: relative;
 }
+
+@media (max-width: 1024px) {
+  .header.with-background {
+    height: 380px;
+    min-height: 380px;
+  }
+
+  .header > .container {
+    height: 288px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header.with-background {
+    height: 540px;
+    min-height: 540px;
+  }
+
+  .header > .container {
+    height: 448px;
+  }
+}
+
 
 @media (min-width: 1500px) {
   .header.with-background {

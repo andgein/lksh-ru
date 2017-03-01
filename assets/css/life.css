@@ -1,0 +1,60 @@
+.map {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	height: 300px;
+}
+
+/* Location */
+.location .description {
+	margin-left: 30px;
+	margin-top: 5px;
+}
+
+.location .description .description__header {
+	font-size: 19px;
+	margin-bottom: 8px;
+	padding-top: 3px;
+}
+
+.location .description p {
+	font-size: 14px;
+	line-height: 16px;
+	padding-right: 30px;
+}
+
+.location .description .pin {
+	float: left;
+	margin-left: -30px;
+}
+
+.location .description .pin img {
+	width: 30px;
+	height: auto;
+}
+/* End of location */
+
+/* Conditions */
+.conditions {
+	margin-top: 40px;
+}
+
+.conditions .col {
+	margin-bottom: 20px;
+}
+
+.conditions p {
+	font-size: 15px;
+	line-height: 17px;
+	min-height: 60px;
+	margin-top: 3px;
+}
+
+.conditions > .row {
+	position: relative;
+}
+.conditions img {
+	width: 150px;
+	height: auto;
+	margin-left: -16px;
+}
+/* End of conditions */

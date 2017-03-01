@@ -24,7 +24,7 @@
 }
 
 .school-announce.green {
-	background-color: #f1f4e5;
+	background-color: #F0F7DC;
 	color: #739300;
 }
 
@@ -61,6 +61,11 @@
     font-weight: 800;    
     padding-bottom: 7px;
     padding-top: 10px;
+}
+
+.school-announce .dates.small {
+	font-size: 20px;
+	line-height: 18px;
 }
 
 .school-announce .dates.with-border {
@@ -351,49 +356,38 @@
 /* End of subscribe form */
 
 /* School announce */
-.school-announce .school-announce__link {
-	font-size: 15px;
+.school-announce__menu > ul {
+	margin-top: 30px;
+	color: black;
 }
 
-.school-announce .school-announce__link .image {
-	display: inline-block;
-	width: 27px;
-	height: 27px;	
-	background-size: 27px 27px;
-	margin-right: 5px;
+.school-announce__menu > ul > li {
+	font-size: 17px;
+	line-height: 21px;
+	margin: 12px 0;
 }
 
-.school-announce .school-announce__link .image[data-image="study"] {
-	background-image: url('../../images/main/icons/study.png');
-}
-.school-announce .school-announce__link:hover .image[data-image="study"] {
-	background-image: url('../../images/main/icons/study_hover.png');
-}
-.school-announce .school-announce__link .image[data-image="come"] {
-	background-image: url('../../images/main/icons/come.png');
-}
-.school-announce .school-announce__link:hover .image[data-image="come"] {
-	background-image: url('../../images/main/icons/come_hover.png');
-}
-.school-announce .school-announce__link .image[data-image="payment"] {
-	background-image: url('../../images/main/icons/payment.png');
-}
-.school-announce .school-announce__link:hover .image[data-image="payment"] {
-	background-image: url('../../images/main/icons/payment_hover.png');
-}
-.school-announce .school-announce__link .image[data-image="take"] {
-	background-image: url('../../images/main/icons/take.png');
-}
-.school-announce .school-announce__link:hover .image[data-image="take"] {
-	background-image: url('../../images/main/icons/take_hover.png');
+.school-announce .school-announce__menu > ul > li a {
+	color: black;
+	border-color: rgba(0, 0, 0, 0.2);
 }
 
-.school-announce .school-announce__link > * {
-	vertical-align: middle;
+.school-announce__menu > ul > li.school-announce__menu__header {
+	font-weight: 700;
+	margin-bottom: 14px;
 }
 
-.school-announce .school-announce__link > .school-announce__link__text {
-	position: relative;
-	top: 2px;
+.school-announce__menu ul li.inactive a {
+	color: #C2C6B2;
+	border-color: #C2C6B2;
+	pointer-events: none;
+}
+
+.school-announce__menu ul li.current {
+    background-color: #73A100;
+    padding: 5px 10px;
+    display: inline-block;
+    margin: 0 0 0 -10px;
+    color: white;
 }
 /* End of school announce */

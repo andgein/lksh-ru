@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+
+    <title>Быт ЛКШ</title>
+    <meta name="description" content="Летняя компьютерная школа пройдёт в две смены: в июле и августе 2017 года">
+    <meta name="author" content="ЛКШ">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="assets/css/reset.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/global.css?v=20161217">
+    <link rel="stylesheet" href="assets/css/fonts.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/grid.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/sidebar.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/life.css?v=1.0">
+    <!-- <link rel="stylesheet" href="assets/css/demonstration.css?v=1.0"> -->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="wide-container">
+        <div class="row">
+            <div class="left-sidebar col xs-6 sm-4 md-2">
+                <div class="logo"></div>
+                <div class="left-sidebar__menu">
+                    <ul>
+                        <li class="left-sidebar__menu__header">Как это будет</li>
+                        <li><a href="study.html">Учёба</a></li>
+                        <li class="current">Быт</li>
+                        <li><a href="day.html">Распорядок дня</a></li>
+                    </ul>
+
+                    <ul>
+                        <li class="left-sidebar__menu__header">Как попасть в&nbsp;<span class="caps">ЛКШ</span></li>
+                        <li class="inactive"><a href="#">Поступить</a></li>
+                        <li class="inactive"><a href="#">Заполнить анкету зачисленного</a></li>
+                        <li class="inactive"><a href="#">Заплатить оргвзнос</a></li>
+                        <li class="inactive"><a href="#">Загрузить сканы документов</a></li>
+                        <li class="inactive"><a href="#">Заполнить анкету о&nbsp;приезде</a></li>
+                        <li class="inactive"><a href="#">Собраться</a></li>
+                        <li class="inactive"><a href="#">Приехать</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col xs-6 sm-8 md-10">
+                <div class="header">
+                    <div class="header__top">
+                        <div class="header__profile">
+                            <a href="http://sistema.lksh.ru">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content" id="content">                    
+
+                    <h2 class="green mt60 mb30">Быт</h2>
+
+                    <p>
+                        Летние смены 2017 года пройдут в&nbsp;Костромской области, но в&nbsp;разных местах: июльская — в&nbsp;лагере «Электроник», а&nbsp;августовская&nbsp;— на&nbsp;традиционной для ЛКШ базе отдыха «Берендеевы поляны».
+                    </p>
+
+                    <div class="map outside-of-content" id="map">
+                    </div>
+
+                    <div class="row mt38">
+                        <div class="col xs-12 md-4">
+                            <p>
+                                Школьников селят по&nbsp;учебным группам. Преподаватели групп живут в&nbsp;тех же домиках. Отдельных вожатых нет.
+                            </p>
+                            <p>
+                                Родители и&nbsp;сопровождающие не&nbsp;могут остаться на&nbsp;базе: все комнаты заняты школьниками.
+                            </p>
+                            <p>
+                                Бытовые условия на&nbsp;базах похожие.
+                            </p>
+                        </div>
+                        <div class="location  col xs-6 md-4">
+                            <img src="images/life/electronic.png" title="«Электроник»" alt="«Электроник»">
+                            <div class="description">
+                                <img src="images/life/pin_orange.png" class="pin">
+                                <div class="description__header">«Электроник»</div>
+                                <p>
+                                    Трёхэтажные кирпичные корпуса, в&nbsp;комнате живёт от&nbsp;4 до&nbsp;5 человек. Туалеты на&nbsp;этаже, душ в&nbsp;отдельном здании.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="location  col xs-6 md-4">
+                            <img src="images/life/berendeevy_polyany.png" title="«Берендеевы поляны»" alt="«Берендеевы поляны»">
+                            <div class="description">
+                                <img src="images/life/pin_red.png" class="pin">
+                                <div class="description__header red">«Берендеевы поляны»</div>
+                                <p>
+                                    Двухэтажный каменный корпус и&nbsp;деревянные домики, в&nbsp;комнате от&nbsp;3 до&nbsp;6 человек. В каждом домике есть душ и&nbsp;туалет.
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <p>На обеих базах:</p>
+
+                    <div class="conditions">
+                        <div class="row">
+                            <div class="col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-06.png" />
+                                <p>
+                                    Питание пятиразовое, на&nbsp;полдник фрукты
+                                </p>
+                            </div>
+                            <div class="col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-07.png"/>
+                                <p>
+                                    Питьевая вода из кулеров
+                                </p>
+                            </div>
+                            <div class="col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-08.png"/>
+                                <p>
+                                    Есть стиральные машины с&nbsp;порошком
+                                </p>
+                            </div>
+                            <div class="col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-09.png"/>
+                                <p>
+                                    Несколько спортивных площадок
+                                </p>
+                            </div>
+                            <div class="col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-10.png"/>
+                                <p>
+                                    Есть медпункт. Врач на&nbsp;базе постоянно
+                                </p>
+                            </div>                            
+                            <div class="prohibited col xs-6 sm-4 lg-2">
+                                <img src="images/life/conditions-11.png" class="mln3"/>
+                                <p>
+                                    Интернета нет, мобильная связь плохая
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- content -->
+            </div> <!-- col -->
+        </div> <!-- row -->
+    </div> <!-- container -->
+
+    <footer>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/global.js"></script>
+    <script src="assets/js/jquery.smooth-scrolling.js"></script>    
+    <script src="assets/js/life.js"></script>
+
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40512365 = new Ya.Metrika({ id:40512365, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40512365" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>

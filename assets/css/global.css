@@ -111,6 +111,10 @@ h2 {
   margin-bottom: 12px;
 }
 
+h2.green {
+  color: #73A100;
+}
+
 h3 {
   font-size: 20px;
   line-height: 24px;
@@ -490,6 +494,17 @@ a.not-text-link .not-text-link__text {
 a.not-text-link:hover .not-text-link__text {
   color: #ed3200;
   border-bottom: 1px solid rgba(255, 54, 0, 0.2);
+}
+
+.green-links a {
+  color: #73A100;
+  border-bottom-color: rgba(115, 161, 0, 0.2);
+}
+
+.green-links a:hover,
+.green-links a:focus,
+.green-links a:active {
+  color: #557003;
 }
 
 footer a {

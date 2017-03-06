@@ -55,6 +55,11 @@
 .conditions img {
 	width: 150px;
 	height: auto;
-	margin-left: -16px;
+	margin-left: -14px;
 }
+
+.conditions .prohibited p {
+	color: #BC3A17;
+}
+
 /* End of conditions */

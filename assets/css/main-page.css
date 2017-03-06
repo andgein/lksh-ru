@@ -1,5 +1,18 @@
-.header {
+.header.with-background {
 	background-image: url('../../images/main/header.jpg');
+
+    background-size: contain;
+    background-position: center right;
+    background-repeat: no-repeat;
+}
+
+.header__title {
+	color: #005E4F;
+}
+
+.header__title .cursor {
+	border-left: 16px solid #73A100;
+	font-size: 38px;
 }
 
 .text-block {
@@ -7,12 +20,6 @@
 }
 
 /* School announce */
-
-.school-announces {
-	margin-top: 50px;	
-    margin-left: -35px;
-    margin-right: -35px;
-}
 
 .school-announce {
 	padding: 0 30px 40px 20px;
@@ -364,7 +371,7 @@
 .school-announce__menu > ul > li {
 	font-size: 17px;
 	line-height: 21px;
-	margin: 12px 0;
+	padding: 0 0 12px 0;
 }
 
 .school-announce .school-announce__menu > ul > li a {
@@ -379,7 +386,7 @@
 
 .school-announce__menu ul li.inactive a {
 	color: #C2C6B2;
-	border-color: #C2C6B2;
+	border-color: rgba(194, 198, 175, 0.5);
 	pointer-events: none;
 }
 
@@ -390,4 +397,52 @@
     margin: 0 0 0 -10px;
     color: white;
 }
+
+.school-announce__menu ul li .description {
+	font-size: 15px;
+	margin: 4px 0;
+}
+
+.timeline ul li:not(.no-timeline) {	
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    margin-left: -23px;
+    padding-left: 23px;
+}
+
+.timeline ul li.no-timeline + li,
+.timeline ul li:first-child {
+	padding-top: 0;
+}
+
+.timeline ul li:last-child {
+	border-left-width: 0;
+}
+
+.timeline .timeline-point {
+    display: inline-block;
+    margin-left: -33px;
+    margin-right: 11px;
+    font-size: 12px;
+    border-radius: 9px;
+    width: 19px;
+    height: 19px;
+    text-align: center;    
+    background-color: #f0f7dc;
+    vertical-align: top;
+}
+
+.timeline .timeline-point span {
+	position: relative;
+	top: -1px;
+}
+
+.inactive .timeline-point {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.school-announce__menu__header.no-timeline {
+	margin-bottom: 20px;
+}
+
 /* End of school announce */

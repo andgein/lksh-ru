@@ -4,6 +4,12 @@
 	height: 100%;
 }
 
+@media (min-width: 1200px) {
+	.left-sidebar {
+		padding-left: 50px;
+	}
+}
+
 .left-sidebar__menu > ul {
 	margin-top: 50px;
 }
@@ -11,7 +17,7 @@
 .left-sidebar__menu > ul > li {
 	font-size: 17px;
 	line-height: 21px;
-	margin: 12px 0;
+	margin: 14px 0;
 }
 
 .left-sidebar__menu > ul > li a {
@@ -26,7 +32,7 @@
 
 .left-sidebar__menu ul li.inactive a {
 	color: #C2C6B2;
-	border-color: #C2C6B2;
+	border-color: rgba(194, 198, 175, 0.5);
 	pointer-events: none;
 }
 

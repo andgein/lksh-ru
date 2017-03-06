@@ -8,7 +8,10 @@
     <meta name="description" content="Летняя компьютерная школа пройдёт в две смены: в июле и августе 2017 года">
     <meta name="author" content="ЛКШ">
 
+    <!-- For fast loading -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/life.js"></script>    
 
     <link rel="stylesheet" href="assets/css/reset.css?v=1.0">
     <link rel="stylesheet" href="assets/css/global.css?v=20161217">
@@ -25,8 +28,13 @@
 <body>
     <div class="wide-container">
         <div class="row">
-            <div class="left-sidebar col xs-6 sm-4 md-2">
-                <div class="logo"></div>
+            <div class="left-sidebar col xs-6 sm-4 md-3 no-float">
+                <div class="logo-with-text">
+                    <a href="index.html" class="not-text-link"><img src="images/logo-part.png"></a>
+                    <div class="logo-text">
+                        Летние смены
+                    </div>
+                </div>
                 <div class="left-sidebar__menu">
                     <ul>
                         <li class="left-sidebar__menu__header">Как это будет</li>
@@ -48,10 +56,10 @@
                 </div>
             </div>
 
-            <div class="col xs-6 sm-8 md-10">
+            <div class="col xs-6 sm-8 md-9 no-float">
                 <div class="header">
                     <div class="header__top">
-                        <div class="header__profile">
+                        <div class="header__profile green-on-hover">
                             <a href="http://sistema.lksh.ru">
                             </a>
                         </div>
@@ -62,7 +70,7 @@
 
                     <h2 class="green mt60 mb30">Быт</h2>
 
-                    <p>
+                    <p class="mw900">
                         Летние смены 2017 года пройдут в&nbsp;Костромской области, но в&nbsp;разных местах: июльская — в&nbsp;лагере «Электроник», а&nbsp;августовская&nbsp;— на&nbsp;традиционной для ЛКШ базе отдыха «Берендеевы поляны».
                     </p>
 
@@ -97,7 +105,7 @@
                                 <img src="images/life/pin_red.png" class="pin">
                                 <div class="description__header red">«Берендеевы поляны»</div>
                                 <p>
-                                    Двухэтажный каменный корпус и&nbsp;деревянные домики, в&nbsp;комнате от&nbsp;3 до&nbsp;6 человек. В каждом домике есть душ и&nbsp;туалет.
+                                    Двухэтажный каменный корпус и&nbsp;деревянные домики, в&nbsp;комнате от&nbsp;3 до&nbsp;6&nbsp;человек. В&nbsp;каждом домике есть душ и&nbsp;туалет.
                                 </p>
                             </div>
                         </div>                        
@@ -116,7 +124,7 @@
                             <div class="col xs-6 sm-4 lg-2">
                                 <img src="images/life/conditions-07.png"/>
                                 <p>
-                                    Питьевая вода из кулеров
+                                    Питьевая вода из&nbsp;кулеров
                                 </p>
                             </div>
                             <div class="col xs-6 sm-4 lg-2">
@@ -138,7 +146,7 @@
                                 </p>
                             </div>                            
                             <div class="prohibited col xs-6 sm-4 lg-2">
-                                <img src="images/life/conditions-11.png" class="mln3"/>
+                                <img src="images/life/conditions-11.png"/>
                                 <p>
                                     Интернета нет, мобильная связь плохая
                                 </p>
@@ -147,17 +155,14 @@
                     </div>
 
                 </div> <!-- content -->
+                <footer>
+                </footer>
             </div> <!-- col -->
         </div> <!-- row -->
     </div> <!-- container -->
 
-    <footer>
-    </footer>
-
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/global.js"></script>
-    <script src="assets/js/jquery.smooth-scrolling.js"></script>    
-    <script src="assets/js/life.js"></script>
+    <script src="assets/js/jquery.smooth-scrolling.js"></script>
 
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter40512365 = new Ya.Metrika({ id:40512365, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/40512365" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </body>

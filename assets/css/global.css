@@ -97,8 +97,8 @@ strong {
 }
 
 h1 {
-  font-size: 69px;
-  line-height: 50px;
+  font-size: 55px;
+  line-height: 52px;
   font-weight: 800;
   margin-bottom: 30px;
 }
@@ -504,7 +504,7 @@ a.not-text-link:hover .not-text-link__text {
 .green-links a:hover,
 .green-links a:focus,
 .green-links a:active {
-  color: #557003;
+  color: #90C900;
 }
 
 footer a {
@@ -519,6 +519,7 @@ footer a:active {
   border-bottom-color: rgba(255, 54, 0, 0.2);
 }
 
+/* Header */
 .header {
   width: 100%;
 }
@@ -597,6 +598,7 @@ footer a:active {
 }
 
 .header__title {  
+  padding-top: 20px;
 }
 
 .header__title.white,
@@ -614,13 +616,13 @@ footer a:active {
 
 .header .header__subtitle {
   margin-top: 20px;
-  width: 450px;  
+  width: 450px;
 }
 
 .header .header__subtitle p {
-  font-size: 24px;
-  line-height: 26px;
-  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
 }
 
 .header .header__subtitle p + p {
@@ -688,40 +690,10 @@ footer a:active {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* dont used */
-.header__news {
-  display: inline-block;
-  width: 180px;
-  height: 180px;
-  margin-left: 35px;
-  margin-bottom: 35px;
-  padding: 27px 20px;
-  color: white;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#06b7d6+0,90e6ec+100 */
-  background: rgb(6,183,214); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(6,183,214,1) 0%, rgba(144,230,236,1) 100%); /* FF3.6-15 */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(6,183,214,1)), color-stop(100%,rgba(144,230,236,1))); /* Chrome4-9,Safari4-5 */
-  background: -webkit-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: -o-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* Opera 11.10-11.50 */
-  background: -ms-linear-gradient(top,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* IE10 preview */
-  background: linear-gradient(to bottom,  rgba(6,183,214,1) 0%,rgba(144,230,236,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06b7d6', endColorstr='#90e6ec',GradientType=0 ); /* IE6-9 */
-}
-
-.header__news p {
-  font-size: 14pt;
-  font-weight: 400;
-  line-height: 18pt;
-}
-
-.header__news a {
-  color: inherit;
-  border-color: rgba(255, 255, 255, 0.2);
-}
-
 /* Header top */
 .header__top {  
-  padding-top: 15px;
+  padding-top: 25px;
+  position: relative;
 }
 
 .header.with-background .header__top {
@@ -755,6 +727,11 @@ footer a:active {
 .header__logo a {
   color: inherit;
   border-width: 0;
+}
+
+img.header__logo {
+  width: 150px;
+  height: auto;
 }
 
 .header__links {
@@ -863,6 +840,7 @@ footer a:active {
   position: absolute;
   right: 20px;
   margin-top: -5px;
+  display: inline-block;
 }
 
 .header__profile a {
@@ -874,14 +852,42 @@ footer a:active {
   background-size: 100%;
 }
 
-.white .header__profile a {
+.white .header__profile a,
+.header__profile.white a {
   background-image: url('../../images/user-white.png');
 }
 
 .header__profile a:hover {
   background-image: url('../../images/user-hover.png');
 }
+
+.header__profile.green-on-hover a:hover {
+  background-image: url('../../images/user-hover-green.png');
+}
 /* End of header top */
+/* End of header */
+
+/* Logo with text */
+.logo-with-text {
+  white-space: nowrap;
+}
+
+.logo-with-text img {
+  height: 30px;
+  width: auto;
+}
+
+.logo-with-text .logo-text {
+  display: inline-block;
+  height: 30px;
+  font-size: 14px;
+  vertical-align: top;
+  background-color: #73A100;
+  color: white;
+  padding: 9px 12px;
+}
+/* End of logo with text */
+
 
 /* Description-black */
 .description-black {

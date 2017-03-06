@@ -695,3 +695,12 @@
     margin: auto;
   }
 }
+
+/* Use .no-float for full-height columns:
+   http://stackoverflow.com/questions/19089384/twitter-bootstrap-3-two-columns-full-height
+*/
+.col.no-float {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}

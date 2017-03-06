@@ -1,9 +1,9 @@
 .header.with-background {
 	background-image: url('../../images/main/header.jpg');
 
-    background-size: contain;
-    background-position: center right;
-    background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
 }
 
 .header__title {
@@ -13,6 +13,50 @@
 .header__title .cursor {
 	border-left: 16px solid #73A100;
 	font-size: 38px;
+}
+
+@media (max-width: 640px) {
+	.header.with-background {
+		background: none;  	
+	}
+
+	@media (min-width: 440px) {
+		.header__title h1 {
+			font-size: 60px;
+			line-height: 55px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header.with-background {
+		background-position-x: 170px;
+	}
+}
+
+@media (min-width: 768px) {
+	.header.with-background {
+		background-position-x: 250px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+	.header.with-background {
+		background-position-x: 300px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header.with-background {
+		background-position-x: right;
+	}
+}
+
+@media (max-width: 1024px) {
+	.header__title .cursor {
+		font-size: 27px;
+		border-left-width: 10px;
+	}
 }
 
 .text-block {
@@ -37,9 +81,9 @@
 
 .school-announce .title {
 	display: inline-block;
-    color: white;
-    padding: 7px 9px;
-    font-size: 15px;
+	color: white;
+	padding: 7px 9px;
+	font-size: 15px;
 }
 
 .school-announce.red .title {
@@ -63,11 +107,11 @@
 }
 
 .school-announce .dates {
-    font-size: 40px;
-    line-height: 37px;
-    font-weight: 800;    
-    padding-bottom: 7px;
-    padding-top: 10px;
+	font-size: 40px;
+	line-height: 37px;
+	font-weight: 800;	
+	padding-bottom: 7px;
+	padding-top: 10px;
 }
 
 .school-announce .dates.small {
@@ -112,8 +156,8 @@
 	margin: -50px 0 20px;
 	text-align: center;	
 	display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .sponsors a {
@@ -301,25 +345,25 @@
 }
 
 .portrait.with-cite .title {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    padding: 7px 5px;
-    font-weight: 600;
-    font-size: 15px;
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 7px 5px;
+	font-weight: 600;
+	font-size: 15px;
 }
 
 .portrait.with-cite .about {
-    font-size: 15px;
-    line-height: 18px;
-    margin: 5px 0 7px;
-    font-weight: 800;
+	font-size: 15px;
+	line-height: 18px;
+	margin: 5px 0 7px;
+	font-weight: 800;
 }
 
 .portrait.with-cite .text {
-    font-size: 19px;
-    font-weight: 400;
-    line-height: 21px;
+	font-size: 19px;
+	font-weight: 400;
+	line-height: 21px;
 }
 /* End of portraits */
 
@@ -329,15 +373,15 @@
 }
 
 .subscribe-form input[type="text"] {
-    height: 47px;
-    padding: 10px 15px;
-    font-size: 19px;
-    border: 1px solid #c4d294;
-    color: #739300;
-    background-color: transparent;
-    margin-right: 10px;
-    -webkit-appearance: none;
-    max-width: 200px;
+	height: 47px;
+	padding: 10px 15px;
+	font-size: 19px;
+	border: 1px solid #c4d294;
+	color: #739300;
+	background-color: transparent;
+	margin-right: 10px;
+	-webkit-appearance: none;
+	max-width: 200px;
 }
 
 .subscribe-form input[type="text"]::-webkit-input-placeholder {	color: #c4d294 !important; }
@@ -391,11 +435,11 @@
 }
 
 .school-announce__menu ul li.current {
-    background-color: #73A100;
-    padding: 5px 10px;
-    display: inline-block;
-    margin: 0 0 0 -10px;
-    color: white;
+	background-color: #73A100;
+	padding: 5px 10px;
+	display: inline-block;
+	margin: 0 0 0 -10px;
+	color: white;
 }
 
 .school-announce__menu ul li .description {
@@ -404,9 +448,9 @@
 }
 
 .timeline ul li:not(.no-timeline) {	
-    border-left: 1px solid rgba(0, 0, 0, 0.2);
-    margin-left: -23px;
-    padding-left: 23px;
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+	margin-left: -23px;
+	padding-left: 23px;
 }
 
 .timeline ul li.no-timeline + li,
@@ -419,16 +463,16 @@
 }
 
 .timeline .timeline-point {
-    display: inline-block;
-    margin-left: -33px;
-    margin-right: 11px;
-    font-size: 12px;
-    border-radius: 9px;
-    width: 19px;
-    height: 19px;
-    text-align: center;    
-    background-color: #f0f7dc;
-    vertical-align: top;
+	display: inline-block;
+	margin-left: -33px;
+	margin-right: 11px;
+	font-size: 12px;
+	border-radius: 9px;
+	width: 19px;
+	height: 19px;
+	text-align: center;	
+	background-color: #f0f7dc;
+	vertical-align: top;
 }
 
 .timeline .timeline-point span {

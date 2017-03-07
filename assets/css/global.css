@@ -573,6 +573,13 @@ footer a:active {
     top: 2px !important;
   }
 }
+
+@media (min-width: 1200px) and (min-height: 600px) {
+  .header__title h1 {
+    font-size: 66px;
+    line-height: 60px;
+  }
+}
 /*
 @media (max-width: 767px) {
   .header__title .cursor {

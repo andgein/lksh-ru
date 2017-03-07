@@ -157,18 +157,6 @@ ul.mdash-list li {
   margin-top: 8px;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 42px;
-    line-height: 40px;
-  }
-
-  h2 {
-    font-size: 30px;
-    line-height: 33px;
-    margin-top: 46px;
-  }
-}
 
 .button {
   padding: 14px 24px;
@@ -525,8 +513,7 @@ footer a:active {
 }
 
 .header.with-background {
-  height: 440px;
-  min-height: 440px;
+  height: 480px;
   background-size: cover;
   background-position: center center;
 }
@@ -540,11 +527,10 @@ footer a:active {
   position: relative;
 }
 
-@media (max-height: 540px) {
+@media (max-width: 740px) {
   .header.with-background {
-    height: 380px;
-    min-height: 380px;
-    background-position-x: 150px;
+    height: 320px;
+    background-position-x: 250px !important;
   }
 
   .header > .container {
@@ -552,10 +538,16 @@ footer a:active {
   }
 }
 
-@media (min-height: 740px) {
+@media (max-height: 700px)
+{
   .header.with-background {
-    height: 540px;
-    min-height: 540px;    
+    max-height: 450px;
+  }
+}
+
+@media (min-width: 740px) and (max-width: 900px) {
+  .header.with-background {
+    height: 340px;   
   }
 
   .header > .container {
@@ -563,19 +555,14 @@ footer a:active {
   }
 }
 
-@media (min-height: 900px) {
+@media (min-width: 900px) and (max-width: 1200px) {
   .header.with-background {
-    height: 500px;
-    min-height: 500px;
+    height: 400px;
   }
 
   .header__title h1 {
     font-size: 60px;
     line-height: 55px;
-  }
-
-  .header__title .cursor {
-    font-size: 27px !important;
   }
 
   .header__last-news .line {
@@ -586,12 +573,12 @@ footer a:active {
     top: 2px !important;
   }
 }
-
+/*
 @media (max-width: 767px) {
   .header__title .cursor {
     font-size: 35px !important;
   }
-}
+}*/
 
 .header__title {  
   padding-top: 20px;
@@ -696,8 +683,10 @@ footer a:active {
   height: 100px;
 }
 
-.header__top .container {
-  position: relative;
+@media (max-width: 994px) {
+  .header.with-background .header__top {
+    height: 80px;
+  }
 }
 
 .header__top .container > div {

@@ -15,48 +15,22 @@
 	font-size: 38px;
 }
 
+@media (min-width: 440px) and (max-width: 994px) {
+	.header__title h1 {
+		font-size: 42px;
+		line-height: 40px;
+	}
+
+	.header__title .cursor {
+		border-left: 10px solid #73A100;
+		font-size: 28px;
+	}
+}
+
 @media (max-width: 640px) {
 	.header.with-background {
 		background: none;  	
-	}
-
-	@media (min-width: 440px) {
-		.header__title h1 {
-			font-size: 60px;
-			line-height: 55px;
-		}
-	}
-}
-
-@media (max-width: 768px) {
-	.header.with-background {
-		background-position-x: 170px;
-	}
-}
-
-@media (min-width: 768px) {
-	.header.with-background {
-		background-position-x: 250px;
-	}
-}
-
-@media (min-width: 992px) and (max-width: 1200px) {
-	.header.with-background {
-		background-position-x: 300px;
-	}
-}
-
-@media (min-width: 1200px) {
-	.header.with-background {
-		background-position-x: right;
-	}
-}
-
-@media (max-width: 1024px) {
-	.header__title .cursor {
-		font-size: 27px;
-		border-left-width: 10px;
-	}
+	}	
 }
 
 .text-block {

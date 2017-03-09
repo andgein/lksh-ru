@@ -30,6 +30,17 @@
 	vertical-align: top;
 }
 
+.parallels table tbody td.parallel__subname {
+    border-width: 0;
+    font-weight: 300;
+    font-size: 24px;
+    padding-bottom: 0;
+}
+
+.parallels table tbody td.small-top-padding {
+    padding-top: 20px;
+}
+
 .parallels .parallel__name {
 	font-size: 110px;
 	line-height: 90px;
